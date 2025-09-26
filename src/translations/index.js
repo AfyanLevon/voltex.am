@@ -4,7 +4,7 @@ export const translations = {
     services: "Services",
     whyVoltex: "Why Voltex",
     contact: "Contact",
-    getQuote: "Get a Quote",
+    getQuote: "Energy Solutions",
     menu: "Menu",
     
     // Hero Section
@@ -12,8 +12,8 @@ export const translations = {
     heroBadgeWord1: "Accumulate",
     heroBadgeWord2: "Your", 
     heroBadgeWord3: "Independence",
-    heroTitle: "Technology",
-    heroSubtitle: "delivering measurable results",
+    heroTitle: "Quality from Blueprint to Keys",
+    heroSubtitle: "With Voltex, you can get modern and innovative solutions for projects of any complexity.",
     heroDescription: "We build digital solutions that drive business growth and user engagement.",
     heroCta: "Start Your Project",
     
@@ -61,7 +61,7 @@ export const translations = {
     services: "Ծառայություններ",
     whyVoltex: "Ինչու Voltex",
     contact: "Կապ",
-    getQuote: "Ստանալ գնահատական",
+    getQuote: "Էներգետիկ լուծումներ",
     menu: "Մենյու",
     
     // Hero Section
@@ -69,8 +69,8 @@ export const translations = {
     heroBadgeWord1: "Կուտակեք",
     heroBadgeWord2: "Ձեր", 
     heroBadgeWord3: "Անկախությունը",
-    heroTitle: "Տեխնոլոգիա",
-    heroSubtitle: "տրամադրում է չափելի արդյունքներ",
+    heroTitle: "Որակ՝ նախագծից մինչև բանալի",
+    heroSubtitle: "Վոլտեքս ընկերության հետ կարող եք ստանալ ժամանակակից և նորարարական լուծումներ ցանկացած բարդության նախագծերում։",
     heroDescription: "Մենք ստեղծում ենք թվային լուծումներ, որոնք խթանում են բիզնեսի աճը և օգտատերերի ներգրավվածությունը:",
     heroCta: "Սկսել նախագիծը",
     

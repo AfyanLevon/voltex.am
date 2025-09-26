@@ -109,7 +109,7 @@ export default function Header() {
             <a href="#services" className="hover:text-green-500">{t.services}</a>
             <a href="#why" className="hover:text-green-500">{t.whyVoltex}</a>
             <a href="#contact" className="hover:text-green-500">{t.contact}</a>
-            <a href="mailto:info@voltex.am" className="btn-primary">{t.getQuote}</a>
+            <a href="https://voltex.tech" className="btn-primary">{t.getQuote}</a>
             <LanguageSwitcher />
           </nav>
 
@@ -221,7 +221,7 @@ export default function Header() {
             </a>
             <a
               ref={lastFocusableRef}
-              href="mailto:info@voltex.am"
+              href="https://voltex.tech"
               className="btn-primary w-full justify-center"
               onClick={closeDrawer}
             >
