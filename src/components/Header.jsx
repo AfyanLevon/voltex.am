@@ -109,6 +109,14 @@ export default function Header() {
             <a href="#services" className="hover:text-green-500">{t.services}</a>
             <a href="#why" className="hover:text-green-500">{t.whyVoltex}</a>
             <a href="#contact" className="hover:text-green-500">{t.contact}</a>
+            <a 
+              href="https://voltex.tech" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn-outline"
+            >
+              {t.headerEnergy}
+            </a>
             <a href="mailto:info@voltex.am" className="btn-primary">{t.getQuote}</a>
             <LanguageSwitcher />
           </nav>
@@ -218,6 +226,15 @@ export default function Header() {
               onClick={closeDrawer}
             >
               {t.contact}
+            </a>
+            <a
+              href="https://voltex.tech"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block py-3 px-4 rounded-lg hover:bg-white/5 hover:text-green-500 transition-colors"
+              onClick={closeDrawer}
+            >
+              {t.headerEnergy}
             </a>
             <a
               ref={lastFocusableRef}
