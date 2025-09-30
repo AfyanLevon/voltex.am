@@ -32,8 +32,17 @@ function Hero() {
       <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20 lg:py-32">
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Big animated title (keep existing animation classes if you have them) */}
-          <h1 className="mt-6 text-4xl sm:text-6xl font-extrabold leading-tight">
-            {t.hero_title_quality}
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight">
+            <span
+              className="
+                bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-400
+                bg-clip-text text-transparent
+                bg-[length:200%_200%] animate-gradient
+                drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)]
+              "
+            >
+              {t.hero_title_quality}
+            </span>
           </h1>
 
           {/* wide 3-col strip only (no paragraph, no buttons) */}
