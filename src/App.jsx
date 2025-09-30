@@ -33,7 +33,7 @@ function Hero() {
         <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Big animated title - centered and larger like voltex.tech */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight tracking-tight">
+            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-black leading-none tracking-tight">
               <span
                 className="
                   bg-gradient-to-r from-emerald-400 via-green-500 to-teal-400
