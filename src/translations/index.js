@@ -1,6 +1,14 @@
 export const translations = {
   en: {
+    title: "Voltex LLC",
     // Header
+    headerEnergy: "Energy solutions",
+    // Hero big title
+    hero_title_quality: "Quality from Blueprint to Keys",
+    // Wide strip center text
+    stripText: "With Voltex, you can get modern and innovative solutions for projects of any complexity.",
+    
+    // Keep existing keys for compatibility
     services: "Services",
     whyVoltex: "Why Voltex",
     contact: "Contact",
@@ -16,12 +24,6 @@ export const translations = {
     heroSubtitle: "delivering measurable results",
     heroDescription: "We build digital solutions that drive business growth and user engagement.",
     heroCta: "Start Your Project",
-    
-    // Header Energy Solutions
-    headerEnergy: "Energy solutions",
-    
-    // Innovation Strip
-    stripText: "With Voltex, you can get modern and innovative solutions for projects of any complexity.",
     
     // Services Section
     servicesTitle: "Our Services",
@@ -68,7 +70,15 @@ export const translations = {
   },
   
   am: {
+    title: "Voltex LLC",
     // Header
+    headerEnergy: "Էներգետիկ լուծումներ",
+    // Hero big title
+    hero_title_quality: "Որակ՝ նախագծից մինչև բանալի",
+    // Wide strip center text
+    stripText: "Վոլտեքս ընկերության հետ կարող եք ստանալ ժամանակակից և նորարարական լուծումներ ցանկացած բարդության նախագծերում։",
+    
+    // Keep existing keys for compatibility
     services: "Ծառայություններ",
     whyVoltex: "Ինչու Voltex",
     contact: "Կապ",
@@ -84,12 +94,6 @@ export const translations = {
     heroSubtitle: "տրամադրում է չափելի արդյունքներ",
     heroDescription: "Մենք ստեղծում ենք թվային լուծումներ, որոնք խթանում են բիզնեսի աճը և օգտատերերի ներգրավվածությունը:",
     heroCta: "Սկսել նախագիծը",
-    
-    // Header Energy Solutions
-    headerEnergy: "Էներգետիկ լուծումներ",
-    
-    // Innovation Strip
-    stripText: "Վոլտեքս ընկերության հետ կարող եք ստանալ ժամանակակից և նորարարական լուծումներ ցանկացած բարդության նախագծերում։",
     
     // Services Section
     servicesTitle: "Մեր ծառայությունները",
