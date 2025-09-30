@@ -12,10 +12,16 @@ export const translations = {
     heroBadgeWord1: "Accumulate",
     heroBadgeWord2: "Your", 
     heroBadgeWord3: "Independence",
-    heroTitle: "Technology",
+    heroTitle: "Quality from Blueprint to Keys",
     heroSubtitle: "delivering measurable results",
     heroDescription: "We build digital solutions that drive business growth and user engagement.",
     heroCta: "Start Your Project",
+    
+    // Header Energy Solutions
+    headerEnergy: "Energy solutions",
+    
+    // Innovation Strip
+    stripText: "With Voltex, you can get modern and innovative solutions for projects of any complexity.",
     
     // Services Section
     servicesTitle: "Our Services",
@@ -69,10 +75,16 @@ export const translations = {
     heroBadgeWord1: "Կուտակեք",
     heroBadgeWord2: "Ձեր", 
     heroBadgeWord3: "Անկախությունը",
-    heroTitle: "Տեխնոլոգիա",
+    heroTitle: "Որակ՝ նախագծից մինչև բանալի",
     heroSubtitle: "տրամադրում է չափելի արդյունքներ",
     heroDescription: "Մենք ստեղծում ենք թվային լուծումներ, որոնք խթանում են բիզնեսի աճը և օգտատերերի ներգրավվածությունը:",
     heroCta: "Սկսել նախագիծը",
+    
+    // Header Energy Solutions
+    headerEnergy: "Էներգետիկ լուծումներ",
+    
+    // Innovation Strip
+    stripText: "Վոլտեքս ընկերության հետ կարող եք ստանալ ժամանակակից և նորարարական լուծումներ ցանկացած բարդության նախագծերում։",
     
     // Services Section
     servicesTitle: "Մեր ծառայությունները",
