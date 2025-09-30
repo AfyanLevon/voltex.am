@@ -30,10 +30,10 @@ function Hero() {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20 lg:py-32">
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <main className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Big animated title - centered and larger like voltex.tech */}
           <div className="text-center mb-16">
-            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] font-black leading-none tracking-tight">
+            <h1 className="text-6xl sm:text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] 2xl:text-[14rem] font-black leading-none tracking-tight">
               <span
                 className="
                   bg-gradient-to-r from-emerald-400 via-green-500 to-teal-400
