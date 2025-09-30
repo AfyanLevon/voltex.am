@@ -30,69 +30,46 @@ function Hero() {
 
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20 lg:py-32">
-        {/* Large Centered Slogan */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight tracking-tight bg-gradient-to-r from-emerald-400 via-green-500 to-teal-400 bg-clip-text text-transparent animate-pulse">
-            {t.heroBadgeWord1} {t.heroBadgeWord2} {t.heroBadgeWord3}
-          </h2>
-        </div>
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Big animated title (keep existing animation classes if you have them) */}
+          <h1 className="mt-6 text-4xl sm:text-6xl font-extrabold leading-tight">
+            {t.hero_title_quality}
+          </h1>
 
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left side - Text content */}
-            <div>
-              <h1 className="mt-5 text-4xl sm:text-6xl font-extrabold leading-tight">
-                {t.heroTitle}
-              </h1>
-              <p className="mt-4 max-w-2xl text-white/80">
-                {t.heroDescription}
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a href="#contact" className="btn-primary">
-                  {t.heroCta} →
-                </a>
-                <a href="#services" className="btn-outline">
-                  {t.learnMore}
-                </a>
+          {/* wide 3-col strip only (no paragraph, no buttons) */}
+          <section className="py-10 md:py-16">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+                {/* Left Image */}
+                <div className="flex justify-center md:justify-start">
+                  <img
+                    src="/img/man-blueprint.png"
+                    alt="Engineer with blueprint"
+                    loading="lazy"
+                    className="h-auto w-full max-w-[420px] md:max-w-[520px] object-contain"
+                  />
+                </div>
+
+                {/* Middle Text */}
+                <div className="text-center md:text-left space-y-4">
+                  <h2 className="text-xl md:text-2xl font-semibold leading-snug">
+                    {t.stripText}
+                  </h2>
+                </div>
+
+                {/* Right Image */}
+                <div className="flex justify-center md:justify-end">
+                  <img
+                    src="/img/man-key.png"
+                    alt="Handover keys"
+                    loading="lazy"
+                    className="h-auto w-full max-w-[420px] md:max-w-[520px] object-contain"
+                  />
+                </div>
               </div>
             </div>
-
-            {/* Right side - Innovation Strip */}
-            <div className="relative">
-              {/* Construction 3-col strip */}
-              <section className="relative">
-                <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12">
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                    {/* Left image */}
-                    <div className="flex justify-center">
-                      <img
-                        src="/img/man-blueprint.png"
-                        alt="Engineer with blueprint"
-                        loading="lazy"
-                        className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain"
-                      />
-                    </div>
-                    {/* Middle text */}
-                    <div className="text-center md:text-left space-y-4">
-                      <h2 className="text-xl md:text-2xl font-semibold leading-snug">
-                        {t.stripText}
-                      </h2>
-                    </div>
-                    {/* Right image */}
-                    <div className="flex justify-center">
-                      <img
-                        src="/img/man-key.png"
-                        alt="Handover keys"
-                        loading="lazy"
-                        className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
+          </section>
+        </main>
       </section>
     </div>
   );
