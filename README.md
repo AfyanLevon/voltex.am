@@ -1,6 +1,13 @@
-# Voltex.am - Construction Services
+# React + TypeScript + Vite
 
-Voltex LLC construction services website built with React + TypeScript + Vite.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+# Voltex.tech
+
+[![CodeQL](https://github.com/AfyanLevon/voltex.tech/actions/workflows/codeql.yml/badge.svg)](https://github.com/AfyanLevon/voltex.tech/actions/workflows/codeql.yml)
+[![Dependabot](https://img.shields.io/badge/dependabot-active-brightgreen?logo=dependabot)](https://github.com/AfyanLevon/voltex.tech/network/updates)
+[![Vercel Status](https://vercel.com/api/button/status/voltex-tech)](https://vercel.com/afyanlevon-4123/voltex-tech)
 
 ---
 
