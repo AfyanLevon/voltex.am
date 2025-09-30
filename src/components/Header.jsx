@@ -117,7 +117,6 @@ export default function Header() {
             >
               {t.headerEnergy}
             </a>
-            <a href="mailto:info@voltex.am" className="btn-primary">{t.getQuote}</a>
             <LanguageSwitcher />
           </nav>
 
@@ -228,21 +227,14 @@ export default function Header() {
               {t.contact}
             </a>
             <a
+              ref={lastFocusableRef}
               href="https://voltex.tech"
               target="_blank"
               rel="noopener noreferrer"
-              className="block py-3 px-4 rounded-lg hover:bg-white/5 hover:text-green-500 transition-colors"
+              className="btn-outline w-full justify-center"
               onClick={closeDrawer}
             >
               {t.headerEnergy}
-            </a>
-            <a
-              ref={lastFocusableRef}
-              href="mailto:info@voltex.am"
-              className="btn-primary w-full justify-center"
-              onClick={closeDrawer}
-            >
-              {t.getQuote}
             </a>
           </nav>
         </div>

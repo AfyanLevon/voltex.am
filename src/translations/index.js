@@ -59,7 +59,12 @@ export const translations = {
     // Common
     learnMore: "Learn More",
     viewProject: "View Project",
-    backToTop: "Back to Top"
+    backToTop: "Back to Top",
+    
+    // New keys for construction focus
+    headerEnergy: "Energy solutions",
+    hero_title_quality: "Quality from Blueprint to Keys",
+    stripText: "With Voltex, you can get modern and innovative solutions for projects of any complexity."
   },
   
   am: {
@@ -122,6 +127,11 @@ export const translations = {
     // Common
     learnMore: "Ավելին իմանալ",
     viewProject: "Տեսնել նախագիծը",
-    backToTop: "Վերադառնալ վերև"
+    backToTop: "Վերադառնալ վերև",
+    
+    // New keys for construction focus
+    headerEnergy: "Էներգետիկ լուծումներ",
+    hero_title_quality: "Որակ՝ նախագծից մինչև բանալի",
+    stripText: "Վոլտեքս ընկերության հետ կարող եք ստանալ ժամանակակից և նորարարական լուծումներ ցանկացած բարդության նախագծերում։"
   }
 };

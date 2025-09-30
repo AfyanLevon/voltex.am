@@ -42,8 +42,7 @@ function Hero() {
             {/* Left side - Text content */}
             <div>
               <h1 className="mt-5 text-4xl sm:text-6xl font-extrabold leading-tight">
-                {t.heroTitle} —{" "}
-                <span className="text-green-500">{t.heroSubtitle}</span>
+                {t.heroTitle}
               </h1>
               <p className="mt-4 max-w-2xl text-white/80">
                 {t.heroDescription}
@@ -60,36 +59,37 @@ function Hero() {
 
             {/* Right side - Innovation Strip */}
             <div className="relative">
-              <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                  {/* Left Image */}
-                  <div className="flex justify-center">
-                    <img 
-                      src="/img/man-blueprint.png" 
-                      alt="Engineer with blueprint" 
-                      loading="lazy" 
-                      className="h-auto w-full object-contain max-h-64" 
-                    />
-                  </div>
-                  
-                  {/* Middle Text */}
-                  <div className="text-center md:text-left space-y-4">
-                    <h2 className="text-xl md:text-2xl font-semibold leading-snug">
-                      {t.stripText}
-                    </h2>
-                  </div>
-                  
-                  {/* Right Image */}
-                  <div className="flex justify-center">
-                    <img 
-                      src="/img/man-key.png" 
-                      alt="Handover keys" 
-                      loading="lazy" 
-                      className="h-auto w-full object-contain max-h-64" 
-                    />
+              {/* Construction 3-col strip */}
+              <section className="relative">
+                <div className="mx-auto w-full max-w-screen-xl px-4 sm:px-6 lg:px-8 py-12">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    {/* Left image */}
+                    <div className="flex justify-center">
+                      <img
+                        src="/img/man-blueprint.png"
+                        alt="Engineer with blueprint"
+                        loading="lazy"
+                        className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain"
+                      />
+                    </div>
+                    {/* Middle text */}
+                    <div className="text-center md:text-left space-y-4">
+                      <h2 className="text-xl md:text-2xl font-semibold leading-snug">
+                        {t.stripText}
+                      </h2>
+                    </div>
+                    {/* Right image */}
+                    <div className="flex justify-center">
+                      <img
+                        src="/img/man-key.png"
+                        alt="Handover keys"
+                        loading="lazy"
+                        className="w-full max-w-sm md:max-w-md lg:max-w-lg h-auto object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </section>
             </div>
           </div>
         </div>
