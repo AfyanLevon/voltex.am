@@ -5,23 +5,23 @@ import Footer from "./components/Footer.jsx";
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#0b1220] text-white">
+    <section className="relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 pt-16 pb-12">
         <h1 className="text-3xl md:text-5xl font-bold leading-tight">
           Որակ՝ նախագծից մինչև բանալի
-          <span className="block text-white/60 text-2xl md:text-3xl mt-2">
+          <span className="block text-black/60 text-2xl md:text-3xl mt-2">
             Quality from Blueprint to Keys
           </span>
         </h1>
-        <p className="mt-4 text-white/70 max-w-2xl">
+        <p className="mt-4 text-black/70 max-w-2xl">
           Voltex LLC — շինարարական ամբողջական փաթեթ՝ նախագծումից և կազմակերպումից մինչև ավարտուն հանձնում։
           Հստակ ժամկետներ, թափանցիկ բյուջե, վերահսկելի որակ։
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <a href="mailto:info@voltex.am?subject=Գնահատման%20խնդրանք%20Voltex%20LLC" className="inline-flex items-center rounded-xl bg-white text-black px-5 py-3 text-sm hover:opacity-90">
+          <a href="mailto:info@voltex.am?subject=Գնահատման%20խնդրանք%20Voltex%20LLC" className="inline-flex items-center rounded-xl bg-black text-white px-5 py-3 text-sm hover:opacity-90">
             Ստանալ գնահատում
           </a>
-          <a href="#portfolio" className="inline-flex items-center rounded-xl border border-white/20 px-5 py-3 text-sm hover:bg-white hover:text-black transition">
+          <a href="#portfolio" className="inline-flex items-center rounded-xl border px-5 py-3 text-sm hover:bg-black hover:text-white transition">
             Կատարված աշխատանքներ
           </a>
         </div>
@@ -60,7 +60,6 @@ export default function App() {
       <main className="flex-1">
         <Hero />
         <InnovationStrip />
-        {/* Այստեղից tech-ում եղած YouTube/tech-copy բաժինը հանում ենք */}
       </main>
       <Footer />
     </div>
