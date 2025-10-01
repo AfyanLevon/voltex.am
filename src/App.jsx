@@ -52,12 +52,12 @@ function Hero() {
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-end">
                 {/* Left Image */}
-                <div className="flex justify-center md:justify-start items-end">
+                <div className="flex justify-center md:justify-start items-end mt-20">
                   <img
                     src="/img/man-blueprint.png"
                     alt="Engineer with blueprint"
                     loading="lazy"
-                    className="h-auto w-full max-w-[2000px] md:max-w-[2500px] object-contain scale-150"
+                    className="h-[300px] md:h-[400px] w-auto object-contain"
                   />
                 </div>
 
@@ -74,7 +74,7 @@ function Hero() {
                     src="/img/man-key.png"
                     alt="Handover keys"
                     loading="lazy"
-                    className="h-auto w-full max-w-[420px] md:max-w-[520px] object-contain"
+                    className="h-[300px] md:h-[400px] w-auto object-contain"
                   />
                 </div>
               </div>
