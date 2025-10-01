@@ -57,7 +57,7 @@ function Hero() {
                     src="/img/man-blueprint.png"
                     alt="Engineer with blueprint"
                     loading="lazy"
-                    className="h-auto w-full max-w-[420px] md:max-w-[520px] object-contain"
+                    className="h-auto w-full max-w-[500px] md:max-w-[600px] object-contain"
                   />
                 </div>
 
