@@ -71,46 +71,4 @@
 
 
 
-/* === HERO_BASELINE_V3_START === */
-
-/* Tablet/Desktop: lock both side images to the same bottom baseline.
-   Prefer :has() (modern browsers). Fallback uses tiny translate only for left image. */
-
-@media (min-width: 768px) {
-  /* Modern path  robust baseline lock */
-  @supports selector(div:has(img)) {
-    /* Drop BOTH wrappers (left/right) to row bottom */
-    div:has(> img[src*="man-blueprint"]),
-    div:has(> img[src*="man-key"]) {
-      align-self: end !important;
-    }
-    /* Keep content anchored to bottom inside their boxes */
-    img[src*="man-blueprint"],
-    img[src*="man-key"] {
-      object-fit: contain !important;
-      object-position: bottom center !important;
-    }
-  }
-}
-
-/* Fallback (when :has is not supported): keep both anchored bottom,
-   and nudge the LEFT image slightly to match the right. */
-@supports not selector(div:has(img)) {
-  @media (min-width: 768px) {
-    img[src*="man-blueprint"],
-    img[src*="man-key"] {
-      object-fit: contain !important;
-      object-position: bottom center !important;
-    }
-    img[src*="man-blueprint"] { transform: translateY(14px) !important; }
-  }
-  @media (min-width: 1024px) {
-    img[src*="man-blueprint"] { transform: translateY(18px) !important; }
-  }
-  @media (min-width: 1280px) {
-    img[src*="man-blueprint"] { transform: translateY(22px) !important; }
-  }
-}
-
-/* === HERO_BASELINE_V3_END === */
 

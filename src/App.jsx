@@ -51,7 +51,7 @@ function Hero() {
               md:translate-y-[32px] lg:translate-y-[44px] xl:translate-y-[52px]
             "
           >
-            <div className="md:translate-y-[18px] lg:translate-y-[22px] xl:translate-y-[24px] md:self-end"><SideImage src="/img/man-blueprint.png" alt="Engineer with blueprint" /></div>
+            <div className="md:mt-4 lg:mt-6 xl:mt-7"><SideImage src="/img/man-blueprint.png" alt="Engineer with blueprint" /></div>
           </div>
 
           {/* Center content */}
@@ -238,4 +238,5 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
