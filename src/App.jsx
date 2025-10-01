@@ -1,4 +1,4 @@
-import { LanguageProvider, useLanguage } from "./contexts/LanguageContext";
+﻿import { LanguageProvider, useLanguage } from "./contexts/LanguageContext";
 import { translations } from "./translations";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
@@ -6,83 +6,77 @@ import Badge from "./components/Badge.jsx";
 import Section from "./components/Section.jsx";
 import ServiceIcons from "./components/ServiceIcons.jsx";
 
+function SideImage({ src, alt }) {
+  return (
+    <div
+      className="
+        relative grid place-items-center select-none pointer-events-none
+        w-[220px] h-[220px]
+        sm:w-[260px] sm:h-[260px]
+        md:w-[320px] md:h-[320px]
+        xl:w-[380px] xl:h-[380px]
+      "
+    >
+      <img
+        src={src}
+        alt={alt}
+        width={380}
+        height={380}
+        decoding="async"
+        loading="eager"
+        draggable={false}
+        className="w-full h-full object-contain"
+      />
+    </div>
+  );
+}
+
 function Hero() {
   const { language } = useLanguage();
   const t = translations[language];
   
   return (
-    <div className="relative overflow-hidden border-b border-white/5">
-      {/* soft green glows */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            "radial-gradient(600px 300px at 20% -10%, rgba(107,209,109,0.18), transparent 60%), radial-gradient(800px 400px at 80% -20%, rgba(107,209,109,0.10), transparent 60%)",
-        }}
-      />
-      {/* watermark logo, controlled size */}
-      <img
-        src="/fulllogo_transparent.png"
-        alt=""
-        aria-hidden="true"
-        className="hero-mark"
-      />
+    <section className="relative overflow-hidden border-b border-white/5">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+        <div
+          className="
+            grid items-center gap-8 md:gap-10 xl:gap-16
+            grid-cols-1 md:grid-cols-[1fr_auto_1fr]
+          "
+        >
+          {/* Left image â€” identical container */}
+          <div
+            className="
+              order-1 md:order-none md:justify-self-end
+              md:translate-y-[32px] lg:translate-y-[44px] xl:translate-y-[52px]
+            "
+          >
+            <div className="md:translate-y-[18px] lg:translate-y-[22px] xl:translate-y-[24px] md:self-end"><SideImage src="/img/man-blueprint.png" alt="Engineer with blueprint" /></div>
+          </div>
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20 lg:py-32">
-        <main className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Big animated title - centered and larger like voltex.tech */}
-          <div className="text-center mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black leading-none tracking-tight">
-              <span
-                className="
-                  bg-gradient-to-r from-lime-400 via-green-500 to-teal-600
-                  bg-clip-text text-transparent
-                  bg-[length:200%_200%] animate-gradient
-                  drop-shadow-[0_1px_1px_rgba(0,0,0,0.15)]
-                "
-              >
+          {/* Center content */}
+          <div className="order-2 text-center md:px-6">
+            <h1
+              className="
+                text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight
+              "
+            >
+              <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent">
                 {t.hero_title_quality}
               </span>
             </h1>
+            <p className="mt-6 max-w-[52ch] mx-auto text-base sm:text-lg lg:text-xl text-white/80">
+              {t.stripText}
+            </p>
           </div>
 
-          {/* wide 3-col strip only (no paragraph, no buttons) */}
-          <section className="py-10 md:py-16">
-            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-end">
-                {/* Left Image */}
-                <div className="flex justify-center md:justify-start items-end mt-20">
-                  <img
-                    src="/img/man-blueprint.png"
-                    alt="Engineer with blueprint"
-                    loading="lazy"
-                    className="h-[300px] md:h-[400px] w-auto object-contain"
-                  />
-                </div>
-
-                {/* Middle Text */}
-                <div className="text-center md:text-left space-y-4">
-                  <h2 className="text-xl md:text-2xl font-semibold leading-snug">
-                    {t.stripText}
-                  </h2>
-                </div>
-
-                {/* Right Image */}
-                <div className="flex justify-center md:justify-end items-end">
-                  <img
-                    src="/img/man-key.png"
-                    alt="Handover keys"
-                    loading="lazy"
-                    className="h-[300px] md:h-[400px] w-auto object-contain"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
-      </section>
-    </div>
+          {/* Right image â€” identical container */}
+          <div className="order-3 md:order-none md:justify-self-start">
+            <SideImage src="/img/man-key.png" alt="Owner with keys" />
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -244,3 +238,4 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
