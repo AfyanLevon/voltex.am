@@ -51,7 +51,15 @@ function Hero() {
               md:translate-y-[32px] lg:translate-y-[44px] xl:translate-y-[52px]
             "
           >
-            <div className="md:mt-4 lg:mt-6 xl:mt-7"><SideImage src="/img/man-blueprint.png" alt="Engineer with blueprint" /></div>
+            <div className="md:mt-4 lg:mt-6 xl:mt-7">{/* Mobile only (unchanged) */}
+<div className="block md:hidden">
+  <SideImage src="/img/man-blueprint.png" alt="Engineer with blueprint" />
+</div>
+
+{/* Tablet/Desktop only with safe offset */}
+<div className="hidden md:block md:mt-5 lg:mt-7 xl:mt-8">
+  <SideImage src="/img/man-blueprint.png" alt="Engineer with blueprint" />
+</div></div>
           </div>
 
           {/* Center content */}
@@ -238,5 +246,6 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
 
