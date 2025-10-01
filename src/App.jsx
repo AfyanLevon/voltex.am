@@ -48,7 +48,7 @@ function Hero() {
           {/* LEFT image — locked to column 1, baseline bottom */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square">
-              <span className="relative md:top-[12px] lg:top-[16px] xl:top-[18px] inline-block"><img
+              <span className="relative md:top-[14px] lg:top-[18px] xl:top-[20px] inline-block"><img
                 src="/img/man-blueprint.png"
                 alt="Engineer with blueprint"
                 width={360} height={360}
@@ -246,6 +246,7 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
 
 
