@@ -40,35 +40,27 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div
           className="
-            grid items-center gap-8 md:gap-10 xl:gap-16
-            grid-cols-1 md:grid-cols-[1fr_auto_1fr]
+            grid gap-8 md:gap-12 items-end
+            grid-cols-1
+            md:grid-cols-[1fr_minmax(0,640px)_1fr]
           "
         >
-          {/* Left image â€” identical container */}
-          <div
-            className="
-              order-1 md:order-none md:justify-self-end
-              md:translate-y-[32px] lg:translate-y-[44px] xl:translate-y-[52px]
-            "
-          >
-            <div className="md:mt-4 lg:mt-6 xl:mt-7">{/* Mobile only (unchanged) */}
-<div className="block md:hidden">
-  <SideImage src="/img/man-blueprint.png" alt="Engineer with blueprint" />
-</div>
-
-{/* Tablet/Desktop only with safe offset */}
-<div className="hidden md:block md:mt-5 lg:mt-7 xl:mt-8">
-  <SideImage src="/img/man-blueprint.png" alt="Engineer with blueprint" />
-</div></div>
+          {/* LEFT image — locked to column 1, baseline bottom */}
+          <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square">
+              <img
+                src="/img/man-blueprint.png"
+                alt="Engineer with blueprint"
+                width={360} height={360}
+                className="w-full h-full object-contain object-bottom"
+                decoding="async" loading="eager" draggable={false}
+              />
+            </div>
           </div>
 
-          {/* Center content */}
-          <div className="order-2 text-center md:px-6">
-            <h1
-              className="
-                text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight
-              "
-            >
+          {/* CENTER content — locked to column 2 */}
+          <div className="md:col-start-2 md:col-end-3 text-center md:px-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent">
                 {t.hero_title_quality}
               </span>
@@ -78,9 +70,17 @@ function Hero() {
             </p>
           </div>
 
-          {/* Right image â€” identical container */}
-          <div className="order-3 md:order-none md:justify-self-start">
-            <SideImage src="/img/man-key.png" alt="Owner with keys" />
+          {/* RIGHT image — locked to column 3, baseline bottom */}
+          <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square">
+              <img
+                src="/img/man-key.png"
+                alt="Owner with keys"
+                width={360} height={360}
+                className="w-full h-full object-contain object-bottom"
+                decoding="async" loading="eager" draggable={false}
+              />
+            </div>
           </div>
         </div>
       </div>
