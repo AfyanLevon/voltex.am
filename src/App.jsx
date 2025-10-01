@@ -50,14 +50,14 @@ function Hero() {
           {/* wide 3-col strip only (no paragraph, no buttons) */}
           <section className="py-10 md:py-16">
             <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-end">
                 {/* Left Image */}
-                <div className="flex justify-center md:justify-start">
+                <div className="flex justify-center md:justify-start items-end">
                   <img
                     src="/img/man-blueprint.png"
                     alt="Engineer with blueprint"
                     loading="lazy"
-                    className="h-auto w-full max-w-[1200px] md:max-w-[1400px] object-contain scale-110"
+                    className="h-auto w-full max-w-[2000px] md:max-w-[2500px] object-contain scale-150"
                   />
                 </div>
 
@@ -69,7 +69,7 @@ function Hero() {
                 </div>
 
                 {/* Right Image */}
-                <div className="flex justify-center md:justify-end">
+                <div className="flex justify-center md:justify-end items-end">
                   <img
                     src="/img/man-key.png"
                     alt="Handover keys"
