@@ -67,16 +67,26 @@
   animation: gradient 6s ease-in-out infinite;
 }
 
-/* === HERO_LEFT_NUDGE_START === */
-/* Desktop/tablet only: lower blueprint-man to align with key-man */
+
+
+/* === HERO_LEFT_NUDGE_V2_START === */
+/* Tablet/Desktop only: anchor blueprint-man to bottom and nudge slightly.
+   Tiny values to avoid layout jumps. Uses !important to override Tailwind object-center. */
 @media (min-width: 768px) {
-  img[src*="man-blueprint"] { transform: translateY(14px); }
+  img[src*="man-blueprint"] {
+    object-position: bottom center !important;
+    transform: translateY(6px) !important;
+  }
 }
 @media (min-width: 1024px) {
-  img[src*="man-blueprint"] { transform: translateY(18px); }
+  img[src*="man-blueprint"] {
+    transform: translateY(8px) !important;
+  }
 }
 @media (min-width: 1280px) {
-  img[src*="man-blueprint"] { transform: translateY(22px); }
+  img[src*="man-blueprint"] {
+    transform: translateY(10px) !important;
+  }
 }
-/* === HERO_LEFT_NUDGE_END === */
+/* === HERO_LEFT_NUDGE_V2_END === */
 
