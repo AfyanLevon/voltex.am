@@ -47,12 +47,12 @@ function Hero() {
         >
           {/* LEFT image — locked to column 1, baseline bottom */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square overflow-hidden">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
                 src="/img/man-blueprint.png"
                 alt="Engineer with blueprint"
                 width={360} height={360}
-                className="w-full h-full object-contain object-bottom relative md:top-[12px] lg:top-[16px] xl:top-[18px]"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[92%] w-auto object-contain"
                 decoding="async" loading="eager" draggable={false}
               />
             </div>
@@ -72,12 +72,12 @@ function Hero() {
 
           {/* RIGHT image — locked to column 3, baseline bottom */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square overflow-hidden">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
                 src="/img/man-key.png"
                 alt="Owner with keys"
                 width={360} height={360}
-                className="w-full h-full object-contain object-bottom"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[92%] w-auto object-contain"
                 decoding="async" loading="eager" draggable={false}
               />
             </div>
@@ -246,6 +246,7 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
 
 
