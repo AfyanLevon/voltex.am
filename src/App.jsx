@@ -52,7 +52,7 @@ function Hero() {
                 src="/img/man-blueprint.png?v=2"
                 alt="Engineer with blueprint"
                 width={360} height={360}
-                className="absolute bottom-0 md:-bottom-3 lg:-bottom-4 xl:-bottom-5 left-1/2 -translate-x-1/2 h-[100%] w-auto object-contain"
+                className="absolute bottom-0 md:-bottom-4 lg:-bottom-5 xl:-bottom-6 left-1/2 -translate-x-1/2 h-[100%] w-auto object-contain"
                 decoding="async" loading="eager" draggable={false}
               />
             </div>
@@ -198,3 +198,4 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
