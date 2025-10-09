@@ -10,7 +10,7 @@ function SideImage({ src, alt }) {
   return (
     <div
       className="
-        relative grid place-items-center select-none pointer-events-none
+        relative grid place-items-center select-none pointer-events-none    
         w-[220px] h-[220px]
         sm:w-[260px] sm:h-[260px]
         md:w-[320px] md:h-[320px]
@@ -34,9 +34,9 @@ function SideImage({ src, alt }) {
 function Hero() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
   return (
-    <section className="relative overflow-hidden border-b border-white/5">
+    <section className="relative overflow-hidden border-b border-white/5">  
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div
           className="
@@ -45,21 +45,21 @@ function Hero() {
             md:grid-cols-[1fr_minmax(0,640px)_1fr]
           "
         >
-          {/* LEFT image — locked to column 1, baseline bottom */}
+          {/* LEFT image — column 1, baseline lock with tiny negative offsets on md+/lg+/xl+ */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
                 src="/img/man-blueprint.png"
                 alt="Engineer with blueprint"
                 width={360} height={360}
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[92%] w-auto object-contain"
+                className="absolute bottom-0 md:bottom-[-12px] lg:bottom-[-16px] xl:bottom-[-18px] left-1/2 -translate-x-1/2 h-[92%] w-auto object-contain"
                 decoding="async" loading="eager" draggable={false}
               />
             </div>
           </div>
 
           {/* CENTER content — locked to column 2 */}
-          <div className="md:col-start-2 md:col-end-3 text-center md:px-6">
+          <div className="md:col-start-2 md:col-end-3 text-center md:px-6"> 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent">
                 {t.hero_title_quality}
@@ -70,7 +70,7 @@ function Hero() {
             </p>
           </div>
 
-          {/* RIGHT image — locked to column 3, baseline bottom */}
+          {/* RIGHT image — column 3, baseline bottom */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
@@ -91,7 +91,7 @@ function Hero() {
 function Services() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
   const items = [
     {
       title: t.bess,
@@ -121,10 +121,10 @@ function Services() {
         {items.map((x, i) => (
           <div key={i} className="card">
             <div className="flex justify-center">
-              <ServiceIcons serviceType={x.icon} className="w-32 h-32" />
+              <ServiceIcons serviceType={x.icon} className="w-32 h-32" />   
             </div>
             <h3 className="mt-3 font-semibold">{x.title}</h3>
-            <p className="mt-2 text-white/70 text-sm leading-relaxed">
+            <p className="mt-2 text-white/70 text-sm leading-relaxed">      
               {x.desc}
             </p>
           </div>
@@ -137,7 +137,7 @@ function Services() {
 function Why() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
   const bullets = [
     t.expertiseDesc,
     t.qualityDesc,
@@ -172,7 +172,7 @@ function Why() {
 function Contact() {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
   return (
     <Section id="contact" title={t.contactTitle} kicker={t.contactSubtitle}>
       <div className="card">
@@ -200,7 +200,7 @@ function Contact() {
               </div>
             </div>
             <div className="mt-6 flex gap-3">
-              <a href="mailto:info@voltex.am" className="btn-primary">
+              <a href="mailto:info@voltex.am" className="btn-primary">      
                 Email us
               </a>
               <a href="tel:+37495933939" className="btn-outline">
@@ -211,7 +211,7 @@ function Contact() {
           <div className="rounded-xl border border-white/10 bg-gray-800/60 p-4">
             <iframe
               title="Voltex location"
-              className="h-72 w-full rounded-lg border border-white/10"
+              className="h-72 w-full rounded-lg border border-white/10"     
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               src="https://www.openstreetmap.org/export/embed.html?bbox=44.0,40.1,45.2,41.0&layer=mapnik"
@@ -246,15 +246,3 @@ export default function App() {
     </LanguageProvider>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
