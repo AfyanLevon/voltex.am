@@ -47,7 +47,7 @@ function Hero() {
         >
           {/* LEFT image — baseline lock with scale-based negative bottoms */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden md:ring-2 md:ring-amber-400/50">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
                 src="/img/man-blueprint.png?v=2"
                 alt="Engineer with blueprint"
@@ -59,9 +59,9 @@ function Hero() {
           </div>
 
           {/* CENTER content */}
-          <div className="md:col-start-2 md:col-end-3 text-center md:px-6"> 
+          <div className="md:col-span-3 md:order-first text-center md:px-6"> 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-              <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent animate-pulse">
                 {t.hero_title_quality}
               </span>
             </h1>
@@ -72,7 +72,7 @@ function Hero() {
 
           {/* RIGHT image — exact bottom-0 */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden md:ring-2 md:ring-amber-400/50">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
                 src="/img/man-key.png?v=2"
                 alt="Owner with keys"
@@ -198,5 +198,6 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
 
