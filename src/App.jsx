@@ -47,7 +47,7 @@ function Hero() {
         >
           {/* LEFT image — baseline lock with scale-based negative bottoms */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden md:ring-2 md:ring-amber-400/50">
               <img
                 src="/img/man-blueprint.png?v=2"
                 alt="Engineer with blueprint"
@@ -72,7 +72,7 @@ function Hero() {
 
           {/* RIGHT image — exact bottom-0 */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden md:ring-2 md:ring-amber-400/50">
               <img
                 src="/img/man-key.png?v=2"
                 alt="Owner with keys"
@@ -198,4 +198,5 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
