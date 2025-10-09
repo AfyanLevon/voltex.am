@@ -47,19 +47,19 @@ function Hero() {
         >
           {/* LEFT image — baseline lock with scale-based negative bottoms */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden transform-none">
               <img
                 src="/img/man-blueprint.png?v=2"
                 alt="Engineer with blueprint"
                 width={360} height={360}
-                className="absolute bottom-0 md:-bottom-8 lg:-bottom-10 xl:-bottom-12 left-1/2 -translate-x-1/2 md:h-full lg:h-full xl:h-full w-auto object-contain transform-gpu origin-bottom md:scale-125 lg:scale-150 xl:scale-150"
+                className="absolute left-1/2 -translate-x-1/2 bottom-0 md:-bottom-8 lg:-bottom-10 xl:-bottom-12 h-[100%] w-auto object-contain transform-gpu origin-bottom rotate-0 md:scale-125 lg:scale-150 xl:scale-150"
                 decoding="async" loading="eager" draggable={false}
               />
             </div>
           </div>
 
           {/* CENTER content */}
-          <div className="md:col-span-3 md:order-first text-center md:px-6"> 
+          <div className="md:col-span-3 md:order-first transform-none text-center md:px-6"> 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent animate-pulse">
                 {t.hero_title_quality}
@@ -72,12 +72,12 @@ function Hero() {
 
           {/* RIGHT image — exact bottom-0 */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden transform-none">
               <img
                 src="/img/man-key.png?v=2"
                 alt="Owner with keys"
                 width={360} height={360}
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[100%] w-auto object-contain"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[100%] w-auto object-contain transform-none rotate-0"
                 decoding="async" loading="eager" draggable={false}
               />
             </div>
@@ -198,6 +198,7 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
 
 
