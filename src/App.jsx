@@ -45,20 +45,20 @@ function Hero() {
             md:grid-cols-[1fr_minmax(0,640px)_1fr]
           "
         >
-          {/* LEFT image — column 1, baseline lock (tiny negative offsets on md+/lg+/xl+) */}
+          {/* LEFT image — baseline lock with scale-based negative bottoms */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
                 src="/img/man-blueprint.png?v=2"
                 alt="Engineer with blueprint"
                 width={360} height={360}
-                className="absolute md:bottom-[-12px] lg:bottom-[-16px] xl:bottom-[-18px] left-1/2 -translate-x-1/2 h-[100%] w-auto object-contain"
+                className="absolute bottom-0 md:-bottom-3 lg:-bottom-4 xl:-bottom-5 left-1/2 -translate-x-1/2 h-[100%] w-auto object-contain"
                 decoding="async" loading="eager" draggable={false}
               />
             </div>
           </div>
 
-          {/* CENTER content — locked to column 2 */}
+          {/* CENTER content */}
           <div className="md:col-start-2 md:col-end-3 text-center md:px-6"> 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent">
@@ -70,7 +70,7 @@ function Hero() {
             </p>
           </div>
 
-          {/* RIGHT image — column 3, exact bottom-0 */}
+          {/* RIGHT image — exact bottom-0 */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
@@ -198,6 +198,3 @@ export default function App() {
     </LanguageProvider>
   );
 }
-
-
-
