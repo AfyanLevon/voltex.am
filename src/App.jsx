@@ -40,7 +40,7 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div
           className="
-            grid gap-8 md:gap-12 items-end
+            grid gap-6 md:gap-8 items-end
             grid-cols-1
             md:grid-cols-[1fr_minmax(0,640px)_1fr]
           "
@@ -52,7 +52,7 @@ function Hero() {
                 src="/img/man-blueprint.png?v=2"
                 alt="Engineer with blueprint"
                 width={360} height={360}
-                className="absolute bottom-0 md:-bottom-4 lg:-bottom-5 xl:-bottom-6 left-1/2 -translate-x-1/2 h-[100%] w-auto object-contain"
+                className="absolute bottom-0 md:-bottom-6 lg:-bottom-8 xl:-bottom-9 left-1/2 -translate-x-1/2 md:h-[112%] lg:h-[118%] xl:h-[122%] w-auto object-contain"
                 decoding="async" loading="eager" draggable={false}
               />
             </div>
@@ -198,6 +198,7 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
 
 
