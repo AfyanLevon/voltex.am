@@ -46,7 +46,7 @@ function Hero() {
           "
         >
           {/* LEFT image — baseline lock with scale-based negative bottoms */}
-          <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end transform-gpu md:translate-x-2 md:translate-y-1 lg:translate-x-3 lg:translate-y-2 xl:translate-x-4 xl:translate-y-3">
+          <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end transform-gpu md:translate-x-2 md:translate-y-1 lg:translate-x-3 lg:translate-y-2 xl:translate-x-4 xl:translate-y-3 transform-gpu md:translate-x-4 md:translate-y-2 lg:translate-x-6 lg:translate-y-3 xl:translate-x-8 xl:translate-y-4">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden transform-none">
               <img
                 src="/img/man-blueprint.png?v=2"
@@ -54,8 +54,7 @@ function Hero() {
                 width={360} height={360}
                 className="absolute left-1/2 -translate-x-1/2 bottom-0 md:-bottom-8 lg:-bottom-10 xl:-bottom-12 h-[100%] w-auto object-contain transform-gpu origin-bottom rotate-0 md:scale-125 lg:scale-150 xl:scale-150"
                 decoding="async" loading="eager" draggable={false}
-              />
-            </div>
+              />`n              <div className="hidden md:block absolute bottom-1 right-1 w-2 h-2 bg-fuchsia-400 rounded-full"></div>`n            </div>
           </div>
 
           {/* CENTER content */}
@@ -198,6 +197,7 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
 
 
