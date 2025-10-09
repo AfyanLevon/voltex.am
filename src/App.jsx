@@ -52,7 +52,7 @@ function Hero() {
                 src="/img/man-blueprint.png?v=2"
                 alt="Engineer with blueprint"
                 width={360} height={360}
-                className="absolute bottom-0 md:-bottom-6 lg:-bottom-8 xl:-bottom-9 left-1/2 -translate-x-1/2 md:h-full lg:h-full xl:h-full w-auto object-contain transform-gpu origin-bottom md:scale-110 lg:scale-125 xl:scale-125"
+                className="absolute bottom-0 md:-bottom-8 lg:-bottom-10 xl:-bottom-12 left-1/2 -translate-x-1/2 md:h-full lg:h-full xl:h-full w-auto object-contain transform-gpu origin-bottom md:scale-125 lg:scale-150 xl:scale-150"
                 decoding="async" loading="eager" draggable={false}
               />
             </div>
@@ -198,6 +198,7 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
 
 
