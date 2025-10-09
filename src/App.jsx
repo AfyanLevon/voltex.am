@@ -45,14 +45,14 @@ function Hero() {
             md:grid-cols-[1fr_minmax(0,640px)_1fr]
           "
         >
-          {/* LEFT image — column 1, baseline lock with tiny negative offsets on md+/lg+/xl+ */}
+          {/* LEFT image — column 1, baseline lock (tiny negative offsets on md+/lg+/xl+) */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
                 src="/img/man-blueprint.png"
                 alt="Engineer with blueprint"
                 width={360} height={360}
-                className="absolute bottom-0 md:bottom-[-12px] lg:bottom-[-16px] xl:bottom-[-18px] left-1/2 -translate-x-1/2 h-[92%] w-auto object-contain"
+                className="absolute md:bottom-[-12px] lg:bottom-[-16px] xl:bottom-[-18px] left-1/2 -translate-x-1/2 h-[100%] w-auto object-contain"
                 decoding="async" loading="eager" draggable={false}
               />
             </div>
@@ -70,14 +70,14 @@ function Hero() {
             </p>
           </div>
 
-          {/* RIGHT image — column 3, baseline bottom */}
+          {/* RIGHT image — column 3, exact bottom-0 */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
                 src="/img/man-key.png"
                 alt="Owner with keys"
                 width={360} height={360}
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[92%] w-auto object-contain"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[100%] w-auto object-contain"
                 decoding="async" loading="eager" draggable={false}
               />
             </div>
@@ -93,26 +93,10 @@ function Services() {
   const t = translations[language];
 
   const items = [
-    {
-      title: t.bess,
-      desc: t.bessDesc,
-      icon: 'bess',
-    },
-    {
-      title: t.smartHome,
-      desc: t.smartHomeDesc,
-      icon: 'smartHome',
-    },
-    {
-      title: t.securitySystems,
-      desc: t.securitySystemsDesc,
-      icon: 'securitySystems',
-    },
-    {
-      title: t.energySolutions,
-      desc: t.energySolutionsDesc,
-      icon: 'energySolutions',
-    },
+    { title: t.bess, desc: t.bessDesc, icon: 'bess' },
+    { title: t.smartHome, desc: t.smartHomeDesc, icon: 'smartHome' },
+    { title: t.securitySystems, desc: t.securitySystemsDesc, icon: 'securitySystems' },
+    { title: t.energySolutions, desc: t.energySolutionsDesc, icon: 'energySolutions' },
   ];
 
   return (
@@ -124,9 +108,7 @@ function Services() {
               <ServiceIcons serviceType={x.icon} className="w-32 h-32" />   
             </div>
             <h3 className="mt-3 font-semibold">{x.title}</h3>
-            <p className="mt-2 text-white/70 text-sm leading-relaxed">      
-              {x.desc}
-            </p>
+            <p className="mt-2 text-white/70 text-sm leading-relaxed">{x.desc}</p>
           </div>
         ))}
       </div>
@@ -138,31 +120,20 @@ function Why() {
   const { language } = useLanguage();
   const t = translations[language];
 
-  const bullets = [
-    t.expertiseDesc,
-    t.qualityDesc,
-    t.supportDesc,
-  ];
   return (
     <Section id="why" title={t.whyVoltexTitle} kicker={t.whyVoltexSubtitle}>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <div className="card">
           <h3 className="font-semibold">{t.expertise}</h3>
-          <p className="mt-2 text-white/70">
-            {t.expertiseDesc}
-          </p>
+          <p className="mt-2 text-white/70">{t.expertiseDesc}</p>
         </div>
         <div className="card">
           <h3 className="font-semibold">{t.quality}</h3>
-          <p className="mt-2 text-white/70">
-            {t.qualityDesc}
-          </p>
+          <p className="mt-2 text-white/70">{t.qualityDesc}</p>
         </div>
         <div className="card">
           <h3 className="font-semibold">{t.support}</h3>
-          <p className="mt-2 text-white/70">
-            {t.supportDesc}
-          </p>
+          <p className="mt-2 text-white/70">{t.supportDesc}</p>
         </div>
       </div>
     </Section>
@@ -178,47 +149,28 @@ function Contact() {
       <div className="card">
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
-            <p className="text-white/80">
-              {t.contactDescription}
-            </p>
+            <p className="text-white/80">{t.contactDescription}</p>
             <div className="mt-5 space-y-2 text-sm">
-              <div>
-                <span className="text-white/60">Email:</span>{" "}
-                <a className="hover:text-green-500" href="mailto:info@voltex.am">
-                  {t.contactEmail}
-                </a>
-              </div>
-              <div>
-                <span className="text-white/60">Phone:</span>{" "}
-                <a className="hover:text-green-500" href="tel:+37495933939">
-                  {t.contactPhone}
-                </a>
-              </div>
-              <div>
-                <span className="text-white/60">Address:</span> 44/2 Acharyan
-                str, Yerevan, Armenia
-              </div>
+              <div><span className="text-white/60">Email:</span>{" "}
+                <a className="hover:text-green-500" href="mailto:info@voltex.am">{t.contactEmail}</a></div>
+              <div><span className="text-white/60">Phone:</span>{" "}
+                <a className="hover:text-green-500" href="tel:+37495933939">{t.contactPhone}</a></div>
+              <div><span className="text-white/60">Address:</span> 44/2 Acharyan str, Yerevan, Armenia</div>
             </div>
             <div className="mt-6 flex gap-3">
-              <a href="mailto:info@voltex.am" className="btn-primary">      
-                Email us
-              </a>
-              <a href="tel:+37495933939" className="btn-outline">
-                Call now
-              </a>
+              <a href="mailto:info@voltex.am" className="btn-primary">Email us</a>
+              <a href="tel:+37495933939" className="btn-outline">Call now</a>
             </div>
           </div>
           <div className="rounded-xl border border-white/10 bg-gray-800/60 p-4">
             <iframe
               title="Voltex location"
-              className="h-72 w-full rounded-lg border border-white/10"     
+              className="h-72 w-full rounded-lg border border-white/10"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               src="https://www.openstreetmap.org/export/embed.html?bbox=44.0,40.1,45.2,41.0&layer=mapnik"
             ></iframe>
-            <p className="mt-2 text-xs text-white/50">
-              Approximate location for demo.
-            </p>
+            <p className="mt-2 text-xs text-white/50">Approximate location for demo.</p>
           </div>
         </div>
       </div>
