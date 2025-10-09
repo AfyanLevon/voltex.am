@@ -46,7 +46,7 @@ function Hero() {
           "
         >
           {/* LEFT image — baseline lock with scale-based negative bottoms */}
-          <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
+          <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end transform-gpu md:translate-x-2 md:translate-y-1 lg:translate-x-3 lg:translate-y-2 xl:translate-x-4 xl:translate-y-3">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden transform-none">
               <img
                 src="/img/man-blueprint.png?v=2"
@@ -198,6 +198,7 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
 
 
