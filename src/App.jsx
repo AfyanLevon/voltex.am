@@ -47,7 +47,7 @@ function Hero() {
         >
           {/* LEFT image — baseline lock with scale-based negative bottoms */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden ring-4 ring-yellow-400/40">
               <img
                 src="/img/man-blueprint.png?v=2"
                 alt="Engineer with blueprint"
@@ -72,7 +72,7 @@ function Hero() {
 
           {/* RIGHT image — exact bottom-0 */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden ring-4 ring-yellow-400/40">
               <img
                 src="/img/man-key.png?v=2"
                 alt="Owner with keys"
@@ -84,7 +84,7 @@ function Hero() {
           </div>
         </div>
       </div>
-    </section>
+                <div className="fixed bottom-2 right-2 z-50 text-xs bg-emerald-600/20 px-2 py-1 rounded">DEPLOY CHECK 9057</div>`n    </section>
   );
 }
 
@@ -112,7 +112,7 @@ function Services() {
           </div>
         ))}
       </div>
-    </Section>
+                <div className="fixed bottom-2 right-2 z-50 text-xs bg-emerald-600/20 px-2 py-1 rounded">DEPLOY CHECK 9057</div>`n    </section>
   );
 }
 
@@ -136,7 +136,7 @@ function Why() {
           <p className="mt-2 text-white/70">{t.supportDesc}</p>
         </div>
       </div>
-    </Section>
+                <div className="fixed bottom-2 right-2 z-50 text-xs bg-emerald-600/20 px-2 py-1 rounded">DEPLOY CHECK 9057</div>`n    </section>
   );
 }
 
@@ -174,7 +174,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </Section>
+                <div className="fixed bottom-2 right-2 z-50 text-xs bg-emerald-600/20 px-2 py-1 rounded">DEPLOY CHECK 9057</div>`n    </section>
   );
 }
 
@@ -198,4 +198,5 @@ export default function App() {
     </LanguageProvider>
   );
 }
+
 
