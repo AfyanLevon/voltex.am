@@ -20,11 +20,11 @@ function Hero() {
             md:grid-cols-[1fr_minmax(0,640px)_1fr]
           "
         >
-          {/* LEFT image — same scale, more down & slightly right (4:30) */}
+          {/* LEFT image — strict baseline (bottom-0) + 4:30 vector via translate */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
-                src="/img/man-blueprint.png?v=3"
+                src="/img/man-blueprint.png?v=4"
                 alt="Engineer with blueprint"
                 width={360}
                 height={360}
@@ -32,13 +32,11 @@ function Hero() {
                 loading="eager"
                 draggable={false}
                 className="
-                  absolute left-1/2 -translate-x-1/2
-                  md:translate-x-[8px] lg:translate-x-[12px] xl:translate-x-[14px]
-                  bottom-0
-                  md:bottom-[-24px] lg:bottom-[-32px] xl:bottom-[-36px]
-                  h-full w-auto object-contain
-                  origin-bottom
-                  md:scale-125 lg:scale-[1.6] xl:scale-[1.6]
+                  absolute left-1/2 -translate-x-1/2 bottom-0
+                  h-full w-auto object-contain origin-bottom
+                  md:scale-[1.55] lg:scale-[1.70] xl:scale-[1.75]
+                  md:translate-x-[22px] lg:translate-x-[28px] xl:translate-x-[32px]
+                  md:translate-y-[18px] lg:translate-y-[24px] xl:translate-y-[28px]
                 "
               />
             </div>
@@ -56,11 +54,11 @@ function Hero() {
             </p>
           </div>
 
-          {/* RIGHT image — exact bottom-0 */}
+          {/* RIGHT image — fixed reference (no transforms) */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
-                src="/img/man-key.png?v=3"
+                src="/img/man-key.png?v=4"
                 alt="Owner with keys"
                 width={360}
                 height={360}
