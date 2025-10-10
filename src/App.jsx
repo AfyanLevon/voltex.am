@@ -6,37 +6,25 @@ import Badge from "./components/Badge.jsx";
 import Section from "./components/Section.jsx";
 import ServiceIcons from "./components/ServiceIcons.jsx";
 
-function SideImage({ src, alt }) {
-  return (
-    <div
-      className="
-        relative grid place-items-center select-none pointer-events-none    
-        w-[220px] h-[220px]
-        sm:w-[260px] sm:h-[260px]
-        md:w-[320px] md:h-[320px]
-        xl:w-[380px] xl:h-[380px]
-      "
-    >
-      <img
-        src={src}
-        alt={alt}
-        width={380}
-        height={380}
-        decoding="async"
-        loading="eager"
-        draggable={false}
-        className="w-full h-full object-contain"
-      />
-    </div>
-  );
-}
+/* (optional) SideImage component is unused now; kept for future reuse */
+// function SideImage({ src, alt }) {
+//   return (
+//     <div
+//       className="relative grid place-items-center select-none pointer-events-none
+//                  w-[220px] h-[220px] sm:w-[260px] sm:h-[260px]
+//                  md:w-[320px] md:h-[320px] xl:w-[380px] xl:h-[380px]">
+//       <img src={src} alt={alt} width={380} height={380} decoding="async" loading="eager"
+//            draggable={false} className="w-full h-full object-contain" />
+//     </div>
+//   );
+// }
 
 function Hero() {
   const { language } = useLanguage();
   const t = translations[language];
 
   return (
-    <section className="relative overflow-hidden border-b border-white/5">  
+    <section className="relative overflow-hidden border-b border-white/5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div
           className="
@@ -45,20 +33,30 @@ function Hero() {
             md:grid-cols-[1fr_minmax(0,640px)_1fr]
           "
         >
-          {/* LEFT image — baseline lock with scale-based negative bottoms */}
-          <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end transform-gpu md:translate-x-2 md:translate-y-1 lg:translate-x-3 lg:translate-y-2 xl:translate-x-4 xl:translate-y-3 transform-gpu md:translate-x-4 md:translate-y-2 lg:translate-x-6 lg:translate-y-3 xl:translate-x-8 xl:translate-y-4">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden transform-none">
+          {/* LEFT image — symmetric wrapper; tiny scale + bottom nudge */}
+          <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
-                src="/img/man-blueprint.png?v=2"
+                src="/img/man-blueprint.png?v=3"
                 alt="Engineer with blueprint"
-                width={360} height={360}
-                className="absolute left-1/2 -translate-x-1/2 bottom-0 md:-bottom-8 lg:-bottom-10 xl:-bottom-12 h-[100%] w-auto object-contain transform-gpu origin-bottom rotate-0 md:scale-125 lg:scale-150 xl:scale-150"
-                decoding="async" loading="eager" draggable={false}
-              />`n              <div className="hidden md:block absolute bottom-1 right-1 w-2 h-2 bg-fuchsia-400 rounded-full"></div>`n            </div>
+                width={360}
+                height={360}
+                decoding="async"
+                loading="eager"
+                draggable={false}
+                className="
+                  absolute left-1/2 -translate-x-1/2 bottom-0
+                  md:bottom-[-8px] lg:bottom-[-10px] xl:bottom-[-12px]
+                  h-full w-auto object-contain
+                  origin-bottom
+                  md:scale-110 lg:scale-125 xl:scale-125
+                "
+              />
+            </div>
           </div>
 
           {/* CENTER content */}
-          <div className="md:col-span-3 md:order-first transform-none text-center md:px-6"> 
+          <div className="md:col-span-3 md:order-first text-center md:px-6">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
               <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent animate-pulse">
                 {t.hero_title_quality}
@@ -71,13 +69,16 @@ function Hero() {
 
           {/* RIGHT image — exact bottom-0 */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden transform-none">
+            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
-                src="/img/man-key.png?v=2"
+                src="/img/man-key.png?v=3"
                 alt="Owner with keys"
-                width={360} height={360}
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-[100%] w-auto object-contain transform-none rotate-0"
-                decoding="async" loading="eager" draggable={false}
+                width={360}
+                height={360}
+                decoding="async"
+                loading="eager"
+                draggable={false}
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain"
               />
             </div>
           </div>
@@ -104,7 +105,7 @@ function Services() {
         {items.map((x, i) => (
           <div key={i} className="card">
             <div className="flex justify-center">
-              <ServiceIcons serviceType={x.icon} className="w-32 h-32" />   
+              <ServiceIcons serviceType={x.icon} className="w-32 h-32" />
             </div>
             <h3 className="mt-3 font-semibold">{x.title}</h3>
             <p className="mt-2 text-white/70 text-sm leading-relaxed">{x.desc}</p>
@@ -197,12 +198,3 @@ export default function App() {
     </LanguageProvider>
   );
 }
-
-
-
-
-
-
-
-
-
