@@ -14,11 +14,12 @@ function Hero() {
     <section className="relative overflow-hidden border-b border-white/5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div className="grid gap-6 md:gap-8 items-end grid-cols-1 md:grid-cols-[1fr_minmax(0,640px)_1fr]">
-          {/* LEFT image — move DOWN (6:00) */}
+
+          {/* LEFT image — move further DOWN (6:00) */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-visible">
               <img
-                src="/img/man-blueprint.png?v=9"
+                src="/img/man-blueprint.png?v=10"
                 alt="Engineer with blueprint"
                 width={360}
                 height={360}
@@ -30,7 +31,7 @@ function Hero() {
                   h-full w-auto object-contain origin-bottom
                   md:scale-[1.55] lg:scale-[1.65] xl:scale-[1.70]
                   md:translate-x-[26px] lg:translate-x-[30px] xl:translate-x-[34px]
-                  md:translate-y-[56px] lg:translate-y-[64px] xl:translate-y-[72px]
+                  md:translate-y-[64px] lg:translate-y-[72px] xl:translate-y-[80px]
                   select-none pointer-events-none
                 "
               />
@@ -53,7 +54,7 @@ function Hero() {
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
-                src="/img/man-key.png?v=9"
+                src="/img/man-key.png?v=10"
                 alt="Owner with keys"
                 width={360}
                 height={360}
@@ -64,13 +65,14 @@ function Hero() {
               />
             </div>
           </div>
+
         </div>
       </div>
     </section>
   );
 }
 
-function Services() { /* unchanged */ 
+function Services() {
   const { language } = useLanguage(); const t = translations[language];
   const items = [
     { title: t.bess, desc: t.bessDesc, icon: 'bess' },
@@ -93,7 +95,8 @@ function Services() { /* unchanged */
   );
 }
 
-function Why() { const { language } = useLanguage(); const t = translations[language];
+function Why() {
+  const { language } = useLanguage(); const t = translations[language];
   return (
     <Section id="why" title={t.whyVoltexTitle} kicker={t.whyVoltexSubtitle}>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -105,7 +108,8 @@ function Why() { const { language } = useLanguage(); const t = translations[lang
   );
 }
 
-function Contact() { const { language } = useLanguage(); const t = translations[language];
+function Contact() {
+  const { language } = useLanguage(); const t = translations[language];
   return (
     <Section id="contact" title={t.contactTitle} kicker={t.contactSubtitle}>
       <div className="card">
