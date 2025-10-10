@@ -20,7 +20,7 @@ function Hero() {
             md:grid-cols-[1fr_minmax(0,640px)_1fr]
           "
         >
-          {/* LEFT image — stronger scale + lower baseline */}
+          {/* LEFT image — same scale, more down & slightly right (4:30) */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
@@ -32,8 +32,10 @@ function Hero() {
                 loading="eager"
                 draggable={false}
                 className="
-                  absolute left-1/2 -translate-x-1/2 bottom-0
-                  md:bottom-[-18px] lg:bottom-[-26px] xl:bottom-[-30px]
+                  absolute left-1/2 -translate-x-1/2
+                  md:translate-x-[8px] lg:translate-x-[12px] xl:translate-x-[14px]
+                  bottom-0
+                  md:bottom-[-24px] lg:bottom-[-32px] xl:bottom-[-36px]
                   h-full w-auto object-contain
                   origin-bottom
                   md:scale-125 lg:scale-[1.6] xl:scale-[1.6]
