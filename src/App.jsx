@@ -6,19 +6,6 @@ import Badge from "./components/Badge.jsx";
 import Section from "./components/Section.jsx";
 import ServiceIcons from "./components/ServiceIcons.jsx";
 
-/* (optional) SideImage component is unused now; kept for future reuse */
-// function SideImage({ src, alt }) {
-//   return (
-//     <div
-//       className="relative grid place-items-center select-none pointer-events-none
-//                  w-[220px] h-[220px] sm:w-[260px] sm:h-[260px]
-//                  md:w-[320px] md:h-[320px] xl:w-[380px] xl:h-[380px]">
-//       <img src={src} alt={alt} width={380} height={380} decoding="async" loading="eager"
-//            draggable={false} className="w-full h-full object-contain" />
-//     </div>
-//   );
-// }
-
 function Hero() {
   const { language } = useLanguage();
   const t = translations[language];
@@ -33,7 +20,7 @@ function Hero() {
             md:grid-cols-[1fr_minmax(0,640px)_1fr]
           "
         >
-          {/* LEFT image — symmetric wrapper; tiny scale + bottom nudge */}
+          {/* LEFT image — stronger scale + lower baseline */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
@@ -46,10 +33,10 @@ function Hero() {
                 draggable={false}
                 className="
                   absolute left-1/2 -translate-x-1/2 bottom-0
-                  md:bottom-[-8px] lg:bottom-[-10px] xl:bottom-[-12px]
+                  md:bottom-[-18px] lg:bottom-[-26px] xl:bottom-[-30px]
                   h-full w-auto object-contain
                   origin-bottom
-                  md:scale-110 lg:scale-125 xl:scale-125
+                  md:scale-125 lg:scale-[1.6] xl:scale-[1.6]
                 "
               />
             </div>
