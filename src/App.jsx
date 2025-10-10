@@ -15,11 +15,11 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div className="grid gap-6 md:gap-8 items-end grid-cols-1 md:grid-cols-[1fr_minmax(0,640px)_1fr]">
 
-          {/* LEFT image — move further DOWN */}
+          {/* LEFT image — move DOWN by +6px */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-visible">
               <img
-                src="/img/man-blueprint.png?v=11"
+                src="/img/man-blueprint.png?v=12"
                 alt="Engineer with blueprint"
                 width={360}
                 height={360}
@@ -31,7 +31,7 @@ function Hero() {
                   h-full w-auto object-contain origin-bottom
                   md:scale-[1.55] lg:scale-[1.65] xl:scale-[1.70]
                   md:translate-x-[26px] lg:translate-x-[30px] xl:translate-x-[34px]
-                  md:translate-y-[72px] lg:translate-y-[80px] xl:translate-y-[88px]
+                  md:translate-y-[78px] lg:translate-y-[86px] xl:translate-y-[94px]
                   select-none pointer-events-none
                 "
               />
@@ -54,7 +54,7 @@ function Hero() {
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
-                src="/img/man-key.png?v=11"
+                src="/img/man-key.png?v=12"
                 alt="Owner with keys"
                 width={360}
                 height={360}
