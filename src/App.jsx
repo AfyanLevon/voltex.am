@@ -14,22 +14,19 @@ function Hero() {
     <section className="relative overflow-hidden border-b border-white/5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div className="grid gap-6 md:gap-8 items-end grid-cols-1 md:grid-cols-[1fr_minmax(0,640px)_1fr]">
-          {/* LEFT image — adjust UP a bit */}
+
+          {/* LEFT image — smaller + shift left */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-visible">
               <img
-                src="/img/man-blueprint.png?v=16"
+                src="/img/man-blueprint.png?v=17"
                 alt="Engineer with blueprint"
-                width={360}
-                height={360}
-                decoding="async"
-                loading="eager"
-                draggable={false}
+                width={360} height={360} decoding="async" loading="eager" draggable={false}
                 className="
                   absolute bottom-0 left-1/2 -translate-x-1/2
                   h-full w-auto object-contain origin-bottom
-                  md:scale-[1.55] lg:scale-[1.65] xl:scale-[1.70]
-                  md:translate-x-[26px] lg:translate-x-[30px] xl:translate-x-[34px]
+                  md:scale-[1.45] lg:scale-[1.55] xl:scale-[1.60]
+                  md:translate-x-[16px] lg:translate-x-[18px] xl:translate-x-[20px]
                   md:translate-y-[144px] lg:translate-y-[160px] xl:translate-y-[176px]
                   select-none pointer-events-none
                 "
@@ -53,17 +50,14 @@ function Hero() {
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
-                src="/img/man-key.png?v=16"
+                src="/img/man-key.png?v=17"
                 alt="Owner with keys"
-                width={360}
-                height={360}
-                decoding="async"
-                loading="eager"
-                draggable={false}
+                width={360} height={360} decoding="async" loading="eager" draggable={false}
                 className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain select-none pointer-events-none"
               />
             </div>
           </div>
+
         </div>
       </div>
     </section>
