@@ -1,4 +1,4 @@
-﻿import { LanguageProvider, useLanguage } from "./contexts/LanguageContext";
+import { LanguageProvider, useLanguage } from "./contexts/LanguageContext";
 import { translations } from "./translations";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
@@ -14,12 +14,11 @@ function Hero() {
     <section className="relative overflow-hidden border-b border-white/5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div className="grid gap-6 md:gap-8 items-end grid-cols-1 md:grid-cols-[1fr_minmax(0,640px)_1fr]">
-
-          {/* LEFT image — big drop DOWN */}
+          {/* LEFT image — adjust UP a bit */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-visible">
               <img
-                src="/img/man-blueprint.png?v=15"
+                src="/img/man-blueprint.png?v=16"
                 alt="Engineer with blueprint"
                 width={360}
                 height={360}
@@ -31,7 +30,7 @@ function Hero() {
                   h-full w-auto object-contain origin-bottom
                   md:scale-[1.55] lg:scale-[1.65] xl:scale-[1.70]
                   md:translate-x-[26px] lg:translate-x-[30px] xl:translate-x-[34px]
-                  md:translate-y-[180px] lg:translate-y-[196px] xl:translate-y-[212px]
+                  md:translate-y-[144px] lg:translate-y-[160px] xl:translate-y-[176px]
                   select-none pointer-events-none
                 "
               />
@@ -54,7 +53,7 @@ function Hero() {
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
-                src="/img/man-key.png?v=15"
+                src="/img/man-key.png?v=16"
                 alt="Owner with keys"
                 width={360}
                 height={360}
@@ -65,7 +64,6 @@ function Hero() {
               />
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -108,9 +106,6 @@ function Why() {
   );
 }
 
-function AppContent() {
-  return (<div><Header /><Hero /><Services /><Why /><Contact /><Footer /></div>);
-}
 function Contact() {
   const { language } = useLanguage(); const t = translations[language];
   return (
@@ -119,11 +114,6 @@ function Contact() {
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
             <p className="text-white/80">{t.contactDescription}</p>
-            <div className="mt-5 space-y-2 text-sm">
-              <div><span className="text-white/60">Email:</span> <a className="hover:text-green-500" href="mailto:info@voltex.am">{t.contactEmail}</a></div>
-              <div><span className="text-white/60">Phone:</span> <a className="hover:text-green-500" href="tel:+37495933939">{t.contactPhone}</a></div>
-              <div><span className="text-white/60">Address:</span> 44/2 Acharyan str, Yerevan, Armenia</div>
-            </div>
             <div className="mt-6 flex gap-3">
               <a href="mailto:info@voltex.am" className="btn-primary">Email us</a>
               <a href="tel:+37495933939" className="btn-outline">Call now</a>
@@ -137,6 +127,10 @@ function Contact() {
       </div>
     </Section>
   );
+}
+
+function AppContent() {
+  return (<div><Header /><Hero /><Services /><Why /><Contact /><Footer /></div>);
 }
 
 export default function App() {
