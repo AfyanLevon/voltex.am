@@ -27,7 +27,7 @@ function Hero() {
                   h-full w-auto object-contain origin-bottom
                   md:scale-[1.45] lg:scale-[1.55] xl:scale-[1.60]
                   md:translate-x-[16px] lg:translate-x-[18px] xl:translate-x-[20px]
-                  md:translate-y-[144px] lg:translate-y-[160px] xl:translate-y-[176px]
+                  $1140px] $1156px] $1172px]
                   select-none pointer-events-none
                 "
               />
@@ -130,3 +130,4 @@ function AppContent() {
 export default function App() {
   return (<LanguageProvider><AppContent /></LanguageProvider>);
 }
+
