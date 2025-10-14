@@ -19,10 +19,22 @@ function Hero() {
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-visible">
               <img
-                src="$119"
+                src="/img/man-blueprint.png?v=100"
                 alt="Engineer with blueprint"
-                width={360} height={360} decoding="async" loading="eager" draggable={false}
-                className=" absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain origin-bottom md:scale-\[1\.45] lg:scale-\[1\.55] xl:scale-\[1\.60] md:translate-x-\[4px] lg:translate-x-\[8px] xl:translate-x-\[12px] \$1140px] \$1156px] \$1172px] select-none pointer-events-none  overflow-visible transform-gpu will-change-transform"
+                width={360}
+                height={360}
+                decoding="async"
+                loading="eager"
+                draggable={false}
+                className="
+                  absolute bottom-0 left-1/2 -translate-x-1/2
+                  h-full w-auto object-contain origin-bottom
+                  select-none pointer-events-none overflow-visible
+                  transform-gpu will-change-transform
+                  md:translate-x-[0px] lg:translate-x-[0px] xl:translate-x-[0px]
+                  md:translate-y-0 lg:translate-y-0 xl:translate-y-0
+                  md:scale-[1.55] lg:scale-[1.65] xl:scale-[1.70]
+                "
               />
             </div>
           </div>
