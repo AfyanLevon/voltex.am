@@ -19,14 +19,14 @@ function Hero() {
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
-                src="/img/man-blueprint.png?v=102"
+                src="/img/man-blueprint.png?v=103"
                 alt="Engineer with blueprint"
                 width={360}
                 height={360}
                 decoding="async"
                 loading="eager"
                 draggable={false}
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain select-none pointer-events-none"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain select-none pointer-events-none md:scale-110 lg:scale-115 xl:scale-120 md:translate-y-2 lg:translate-y-3 xl:translate-y-4"
               />
             </div>
           </div>
