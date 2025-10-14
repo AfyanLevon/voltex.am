@@ -19,7 +19,7 @@ function Hero() {
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-visible">
               <img
-                src="/img/man-blueprint.png?v=17"
+                src="/img/man-blueprint.png?v=18"
                 alt="Engineer with blueprint"
                 width={360} height={360} decoding="async" loading="eager" draggable={false}
                 className="
@@ -50,7 +50,7 @@ function Hero() {
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
-                src="/img/man-key.png?v=17"
+                src="/img/man-key.png?v=18"
                 alt="Owner with keys"
                 width={360} height={360} decoding="async" loading="eager" draggable={false}
                 className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain select-none pointer-events-none"
@@ -130,6 +130,7 @@ function AppContent() {
 export default function App() {
   return (<LanguageProvider><AppContent /></LanguageProvider>);
 }
+
 
 
 
