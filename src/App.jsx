@@ -15,7 +15,7 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div className="grid gap-6 md:gap-8 items-end grid-cols-1 md:grid-cols-[1fr_minmax(0,640px)_1fr]">
 
-          {/* LEFT image — mirror RIGHT */}
+          {/* LEFT image — same size and orientation as RIGHT */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
@@ -26,7 +26,7 @@ function Hero() {
                 decoding="async"
                 loading="eager"
                 draggable={false}
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain select-none pointer-events-none md:scale-110 lg:scale-115 xl:scale-120 md:translate-y-2 lg:translate-y-3 xl:translate-y-4"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain select-none pointer-events-none"
               />
             </div>
           </div>
