@@ -15,11 +15,11 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         <div className="grid gap-6 md:gap-8 items-end grid-cols-1 md:grid-cols-[1fr_minmax(0,640px)_1fr]">
 
-          {/* LEFT image — mirror RIGHT */}
+          {/* LEFT image — same size and orientation as RIGHT */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
-                src="/img/man-blueprint.png?v=102"
+                src="/img/man-blueprint.png?v=103"
                 alt="Engineer with blueprint"
                 width={360}
                 height={360}
