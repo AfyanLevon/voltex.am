@@ -43,14 +43,14 @@ function Hero() {
             </p>
           </div>
 
-          {/* RIGHT image — reference */}
+          {/* RIGHT image — mirrored to face inward; same sizing as LEFT */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
                 src="/img/man-key.png?v=18"
                 alt="Owner with keys"
                 width={360} height={360} decoding="async" loading="eager" draggable={false}
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain select-none pointer-events-none"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain select-none pointer-events-none scale-x-[-1]"
               />
             </div>
           </div>
