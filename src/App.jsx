@@ -1,4 +1,5 @@
 import { LanguageProvider, useLanguage } from "./contexts/LanguageContext";
+import { useState } from "react";
 import { translations } from "./translations";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
@@ -9,6 +10,7 @@ import ServiceIcons from "./components/ServiceIcons.jsx";
 function Hero() {
   const { language } = useLanguage();
   const t = translations[language];
+  const [showLightning, setShowLightning] = useState(true);
 
   return (
     <section className="relative overflow-hidden border-b border-white/5">
@@ -42,17 +44,20 @@ function Hero() {
           </div>
 
           {/* CENTER — Lightning bolt only */}
-          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[100px] md:min-h-0">
-            <img
-              src="/img/lightning-bolt.png"
-              alt="Lightning bolt"
-              className="max-w-xs w-full h-auto object-contain opacity-40 select-none pointer-events-none"
-              width={200}
-              height={100}
-              decoding="async"
-              loading="eager"
-            />
-          </div>
+          {showLightning && (
+            <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-0">
+              <img
+                src="/img/lightning-bolt.png?v=1"
+                alt=""
+                className="max-w-xs w-full h-auto object-contain opacity-40 select-none pointer-events-none"
+                width={200}
+                height={100}
+                decoding="async"
+                loading="eager"
+                onError={() => setShowLightning(false)}
+              />
+            </div>
+          )}
 
           {/* RIGHT image — mirrored to face inward; same sizing as LEFT */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
