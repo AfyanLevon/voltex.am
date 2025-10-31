@@ -33,11 +33,6 @@ function Hero() {
 
           {/* CENTER */}
           <div className="md:col-span-3 md:order-first text-center md:px-6 relative">
-            <img
-              src="/img/lightning-bolt.png"
-              alt="Lightning bolt graphic"
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-auto object-contain opacity-20 select-none pointer-events-none z-0"
-            />
             <div className="relative z-10">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
                 <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent animate-pulse">
@@ -48,6 +43,11 @@ function Hero() {
                 {t.stripText}
               </p>
             </div>
+            <img
+              src="/img/lightning-bolt.png"
+              alt="Lightning bolt graphic"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-lg h-auto object-contain opacity-20 select-none pointer-events-none z-0"
+            />
           </div>
 
           {/* RIGHT image — mirrored to face inward; same sizing as LEFT */}
