@@ -13,6 +13,16 @@ function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-white/5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+        {/* Title at the top */}
+        <div className="text-center mb-10 md:mb-14">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+            <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent animate-pulse">
+              {t.hero_title_quality}
+            </span>
+          </h1>
+        </div>
+
+        {/* Images grid with lightning bolt in center */}
         <div className="grid gap-6 md:gap-8 items-end grid-cols-1 md:grid-cols-[1fr_minmax(0,640px)_1fr]">
 
           {/* LEFT image — upscaled to match right figure height */}
@@ -31,22 +41,12 @@ function Hero() {
             </div>
           </div>
 
-          {/* CENTER */}
-          <div className="md:col-start-2 md:col-end-3 text-center md:px-6 relative">
-            <div className="relative z-10">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-                <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent animate-pulse">
-                  {t.hero_title_quality}
-                </span>
-              </h1>
-              <p className="mt-6 max-w-[52ch] mx-auto text-base sm:text-lg lg:text-xl text-white/80">
-                {t.stripText}
-              </p>
-            </div>
+          {/* CENTER — Lightning bolt only */}
+          <div className="md:col-start-2 md:col-end-3 relative flex items-center justify-center">
             <img
               src="/img/lightning-bolt.png"
               alt="Lightning bolt graphic"
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-lg h-auto object-contain opacity-20 select-none pointer-events-none z-0"
+              className="max-w-lg h-auto object-contain opacity-20 select-none pointer-events-none"
             />
           </div>
 
