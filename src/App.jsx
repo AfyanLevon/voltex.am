@@ -42,11 +42,11 @@ function Hero() {
           </div>
 
           {/* CENTER — Lightning bolt only */}
-          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[200px] md:min-h-0 overflow-visible">
+          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[200px] md:min-h-[150px]">
             <img
-              src="/Lightning_svg.svg"
-              alt=""
-              className="w-full max-w-[90vw] md:max-w-[200px] h-auto object-contain opacity-60 select-none pointer-events-none"
+              src="/Lightning_svg.svg?v=2"
+              alt="Lightning bolt"
+              className="w-full max-w-[90vw] md:max-w-[200px] h-auto object-contain opacity-70 select-none pointer-events-none"
               style={{
                 filter: 'brightness(0) saturate(100%) invert(57%) sepia(96%) saturate(344%) hue-rotate(84deg) brightness(97%) contrast(87%)',
                 display: 'block'
@@ -55,6 +55,9 @@ function Hero() {
               height={200}
               decoding="async"
               loading="eager"
+              onError={(e) => {
+                console.error('Lightning bolt image failed to load:', e);
+              }}
             />
           </div>
 
