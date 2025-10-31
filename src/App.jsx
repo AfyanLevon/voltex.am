@@ -23,7 +23,7 @@ function Hero() {
         </div>
 
         {/* Images grid with lightning bolt in center */}
-        <div className="grid gap-6 md:gap-12 items-end grid-cols-1 md:grid-cols-[1fr_minmax(0,640px)_1fr]">
+        <div className="grid gap-6 md:gap-16 items-end grid-cols-1 md:grid-cols-[1fr_minmax(400px,800px)_1fr] overflow-visible">
 
           {/* LEFT image — upscaled to match right figure height */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-start self-end">
@@ -42,18 +42,20 @@ function Hero() {
           </div>
 
           {/* CENTER — Lightning bolt only */}
-          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-0 overflow-visible">
+          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-0 overflow-visible px-4">
             <img
               src="/Lightning_svg.svg"
               alt=""
-              className="max-w-md w-full h-auto object-contain opacity-60 select-none pointer-events-none"
+              className="w-auto h-auto object-contain opacity-60 select-none pointer-events-none"
               style={{
                 filter: 'brightness(0) saturate(100%) invert(57%) sepia(96%) saturate(344%) hue-rotate(84deg) brightness(97%) contrast(87%)',
                 display: 'block',
-                minWidth: '250px'
+                width: '100%',
+                maxWidth: '500px',
+                minWidth: '300px'
               }}
-              width={300}
-              height={300}
+              width={400}
+              height={400}
               decoding="async"
               loading="eager"
             />
