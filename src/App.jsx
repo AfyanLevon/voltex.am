@@ -1,5 +1,4 @@
 import { LanguageProvider, useLanguage } from "./contexts/LanguageContext";
-import { useState } from "react";
 import { translations } from "./translations";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
@@ -10,7 +9,6 @@ import ServiceIcons from "./components/ServiceIcons.jsx";
 function Hero() {
   const { language } = useLanguage();
   const t = translations[language];
-  const [showImage, setShowImage] = useState(true);
 
   return (
     <section className="relative overflow-hidden border-b border-white/5">
@@ -45,18 +43,23 @@ function Hero() {
 
           {/* CENTER — Lightning bolt only */}
           <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-0">
-            {showImage && (
-              <img
-                src="/img/lightning-bolt.png?v=1"
-                alt=""
-                className="max-w-xs w-full h-auto object-contain opacity-40 select-none pointer-events-none"
-                width={200}
-                height={100}
-                decoding="async"
-                loading="eager"
-                onError={() => setShowImage(false)}
+            <svg
+              className="max-w-xs w-full h-auto opacity-40 select-none pointer-events-none"
+              viewBox="0 0 200 100"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M100 10 L130 50 L110 50 L140 90 L70 50 L90 50 Z"
+                fill="rgb(34, 197, 94)"
+                stroke="rgb(16, 185, 129)"
+                strokeWidth="2"
               />
-            )}
+              <path
+                d="M95 15 L120 45 L105 45 L130 80 L65 45 L80 45 Z"
+                fill="rgb(74, 222, 128)"
+                opacity="0.8"
+              />
+            </svg>
           </div>
 
           {/* RIGHT image — mirrored to face inward; same sizing as LEFT */}
