@@ -32,7 +32,7 @@ function Hero() {
           </div>
 
           {/* CENTER */}
-          <div className="md:col-span-3 md:order-first text-center md:px-6 relative">
+          <div className="md:col-start-2 md:col-end-3 text-center md:px-6 relative">
             <div className="relative z-10">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
                 <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent animate-pulse">
