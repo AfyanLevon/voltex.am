@@ -42,17 +42,20 @@ function Hero() {
           </div>
 
           {/* CENTER — Lightning bolt only */}
-          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-0">
+          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-0 overflow-visible">
             <img
               src="/Lightning_svg.svg"
               alt=""
-              className="max-w-xs w-full h-auto object-contain opacity-60 select-none pointer-events-none"
+              className="w-auto h-auto object-contain opacity-60 select-none pointer-events-none"
               style={{
                 filter: 'brightness(0) saturate(100%) invert(57%) sepia(96%) saturate(344%) hue-rotate(84deg) brightness(97%) contrast(87%)',
-                display: 'block'
+                display: 'block',
+                maxWidth: '400px',
+                width: 'auto',
+                height: 'auto'
               }}
-              width={200}
-              height={200}
+              width={300}
+              height={300}
               decoding="async"
               loading="eager"
             />
