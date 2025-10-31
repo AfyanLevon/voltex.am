@@ -23,10 +23,10 @@ function Hero() {
         </div>
 
         {/* Images grid with lightning bolt in center */}
-        <div className="grid gap-6 md:gap-8 items-end grid-cols-1 md:grid-cols-[1fr_minmax(0,640px)_1fr]">
+        <div className="grid gap-6 md:gap-2 items-end grid-cols-1 md:grid-cols-[1fr_minmax(0,640px)_1fr]">
 
           {/* LEFT image — upscaled to match right figure height */}
-          <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-start self-end">
+          <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-end self-end">
             <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
               <img
                 src="/img/man-blueprint.png?v=103"
