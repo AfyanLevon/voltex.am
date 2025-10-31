@@ -46,13 +46,13 @@ function Hero() {
             <img
               src="/Lightning_svg.svg"
               alt=""
-              className="w-full max-w-[90vw] md:max-w-[300px] h-auto object-contain opacity-60 select-none pointer-events-none"
+              className="w-full max-w-[90vw] md:max-w-[250px] h-auto object-contain opacity-60 select-none pointer-events-none"
               style={{
                 filter: 'brightness(0) saturate(100%) invert(57%) sepia(96%) saturate(344%) hue-rotate(84deg) brightness(97%) contrast(87%)',
                 display: 'block'
               }}
-              width={300}
-              height={300}
+              width={250}
+              height={250}
               decoding="async"
               loading="eager"
             />
