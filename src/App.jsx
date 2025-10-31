@@ -11,7 +11,7 @@ function Hero() {
   const t = translations[language];
 
   return (
-    <section className="relative overflow-visible border-b border-white/5">
+    <section className="relative overflow-hidden border-b border-white/5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         {/* Title at the top */}
         <div className="text-center mb-10 md:mb-14">
@@ -42,24 +42,17 @@ function Hero() {
           </div>
 
           {/* CENTER — Lightning bolt only */}
-          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-0 overflow-visible z-10" style={{ minHeight: '200px' }}>
+          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[200px] md:min-h-0">
             <img
               src="/Lightning_svg.svg"
               alt=""
-              className="absolute opacity-60 select-none pointer-events-none"
+              className="w-full max-w-[90vw] md:max-w-[500px] h-auto object-contain opacity-60 select-none pointer-events-none"
               style={{
                 filter: 'brightness(0) saturate(100%) invert(57%) sepia(96%) saturate(344%) hue-rotate(84deg) brightness(97%) contrast(87%)',
-                display: 'block',
-                width: '600px',
-                height: 'auto',
-                maxWidth: 'none',
-                left: '50%',
-                top: '50%',
-                transform: 'translate(-50%, -50%)',
-                objectFit: 'contain'
+                display: 'block'
               }}
-              width={600}
-              height={600}
+              width={500}
+              height={500}
               decoding="async"
               loading="eager"
             />
