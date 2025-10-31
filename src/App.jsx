@@ -26,7 +26,7 @@ function Hero() {
                 decoding="async"
                 loading="eager"
                 draggable={false}
-                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain select-none pointer-events-none scale-[1.28]"
+                className="absolute bottom-0 left-1/2 -translate-x-1/2 h-full w-auto object-contain select-none pointer-events-none scale-[1.45]"
               />
             </div>
           </div>
