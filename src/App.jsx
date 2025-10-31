@@ -42,13 +42,13 @@ function Hero() {
           </div>
 
           {/* CENTER — Lightning bolt only */}
-          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[200px] md:min-h-0">
+          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[100px] md:min-h-0">
             <img
               src="/img/lightning-bolt.png"
               alt="Lightning bolt"
-              className="max-w-lg w-full h-auto object-contain opacity-50 select-none pointer-events-none"
-              width={400}
-              height={200}
+              className="max-w-xs w-full h-auto object-contain opacity-40 select-none pointer-events-none"
+              width={200}
+              height={100}
               decoding="async"
               loading="eager"
             />
