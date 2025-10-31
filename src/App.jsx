@@ -10,7 +10,7 @@ import ServiceIcons from "./components/ServiceIcons.jsx";
 function Hero() {
   const { language } = useLanguage();
   const t = translations[language];
-  const [showLightning, setShowLightning] = useState(true);
+  const [showImage, setShowImage] = useState(true);
 
   return (
     <section className="relative overflow-hidden border-b border-white/5">
@@ -44,8 +44,8 @@ function Hero() {
           </div>
 
           {/* CENTER — Lightning bolt only */}
-          {showLightning && (
-            <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-0">
+          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-0">
+            {showImage && (
               <img
                 src="/img/lightning-bolt.png?v=1"
                 alt=""
@@ -54,10 +54,10 @@ function Hero() {
                 height={100}
                 decoding="async"
                 loading="eager"
-                onError={() => setShowLightning(false)}
+                onError={() => setShowImage(false)}
               />
-            </div>
-          )}
+            )}
+          </div>
 
           {/* RIGHT image — mirrored to face inward; same sizing as LEFT */}
           <div className="hidden md:flex md:col-start-3 md:col-end-4 justify-self-start self-end">
