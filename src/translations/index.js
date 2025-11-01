@@ -30,8 +30,8 @@ export const translations = {
     // Services Section
     servicesTitle: "Our Services",
     servicesSubtitle: "What we do best",
-    bess: "BESS (Battery Energy Storage Systems)",
-    bessDesc: "Design & deployment for homes and businesses. Grid-tie, backup, hybrid inverters. 5-year warranty.",
+    bess: "Planning and Design",
+    bessDesc: "Our company will help you with planning and design on the way to the KEY. You can get free advice from experienced specialists to help you find the best solution.",
     smartHome: "Smart Home Solutions",
     smartHomeDesc: "Lighting, climate, access control, voice assistants, energy monitoring. Real-world reliable stacks.",
     securitySystems: "Security Systems",
@@ -102,8 +102,8 @@ export const translations = {
     // Services Section
     servicesTitle: "Մեր ծառայությունները",
     servicesSubtitle: "Ինչը մենք անում ենք լավագույնս",
-    bess: "BESS (Բատարիայի էներգիայի պահեստավորման համակարգեր)",
-    bessDesc: "Նախագծում և տեղադրում տների և բիզնեսների համար: Ցանցային, ռեզերվի և հիբրիդ ինվերտորներ: 5 տարվա երաշխիք:",
+    bess: "Նախագծում և Դիզայն",
+    bessDesc: "Մեր ընկերությունը կօգնի Ձեզ նախագծման և դիզայնի հարցում դեպի ԲԱՆԱԼԻ ճանապարհին։ Փորձառու մասնագետների կողմից կարող եք ստանալ անվճար խորհրդատվություն լավագույնս կողմնորոշվելու համար։",
     smartHome: "Խելացի տան լուծումներ",
     smartHomeDesc: "Լուսավորություն, կլիմա, մուտքի վերահսկում, ձայնային օգնականներ, էներգիայի մոնիտորինգ: Հուսալի համակարգեր:",
     securitySystems: "Անվտանգության համակարգեր",
