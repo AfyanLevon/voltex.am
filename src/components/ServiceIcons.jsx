@@ -5,7 +5,7 @@ export default function ServiceIcons({ serviceType, className = "w-32 h-32" }) {
         <img
           src="/icons/Blueprint-icon.png"
           alt="BESS - Battery Energy Storage Systems"
-          className={className}
+          className={`${className} object-contain`}
         />
       );
 
@@ -14,7 +14,7 @@ export default function ServiceIcons({ serviceType, className = "w-32 h-32" }) {
         <img
           src="/icons/Construction-icon.png"
           alt="Smart Home Solutions"
-          className={className}
+          className={`${className} object-contain`}
         />
       );
 
@@ -23,7 +23,7 @@ export default function ServiceIcons({ serviceType, className = "w-32 h-32" }) {
         <img
           src="/icons/Restoration-icon.png"
           alt="Security Systems"
-          className={className}
+          className={`${className} object-contain`}
         />
       );
 
@@ -32,7 +32,7 @@ export default function ServiceIcons({ serviceType, className = "w-32 h-32" }) {
         <img
           src="/icons/Keyshandover-icon.png"
           alt="Other Energy Solutions"
-          className={className}
+          className={`${className} object-contain`}
         />
       );
 
