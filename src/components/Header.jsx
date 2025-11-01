@@ -113,10 +113,10 @@ export default function Header() {
               href="https://voltex.tech" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="inline-flex items-center gap-2 rounded-xl border px-5 py-3 font-semibold hover:bg-white/5 transition"
+              className="inline-flex items-center gap-2 rounded-xl border px-5 py-3 font-semibold text-white transition hover:opacity-90"
               style={{
-                borderColor: '#193DE7',
-                color: '#193DE7'
+                borderColor: '#1C44FF',
+                backgroundColor: '#1C44FF'
               }}
             >
               {t.headerEnergy}
@@ -235,10 +235,10 @@ export default function Header() {
               href="https://voltex.tech"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-xl border px-5 py-3 font-semibold hover:bg-white/5 transition w-full justify-center"
+              className="inline-flex items-center gap-2 rounded-xl border px-5 py-3 font-semibold text-white transition hover:opacity-90 w-full justify-center"
               style={{
-                borderColor: '#193DE7',
-                color: '#193DE7'
+                borderColor: '#1C44FF',
+                backgroundColor: '#1C44FF'
               }}
               onClick={closeDrawer}
             >
