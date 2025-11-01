@@ -2,6 +2,8 @@ export const translations = {
   en: {
     title: "Voltex LLC",
     // Header
+    companyName: "VOLTEX",
+    companySuffix: "LLC",
     headerEnergy: "Energy solutions",
     // Hero big title
     hero_title_quality: "Quality from Blueprint to Keys",
@@ -72,6 +74,8 @@ export const translations = {
   am: {
     title: "Voltex LLC",
     // Header
+    companyName: "ՎՈԼՏԵՔՍ",
+    companySuffix: "ՍՊԸ",
     headerEnergy: "Էներգետիկ լուծումներ",
     // Hero big title
     hero_title_quality: "Որակ՝ նախագծից մինչև բանալի",
