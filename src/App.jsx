@@ -51,12 +51,15 @@ function Hero() {
             <img
               src="/Half-key.png"
               alt=""
-              className="w-full max-w-[90vw] md:max-w-[300px] h-auto opacity-70 select-none pointer-events-none object-contain"
+              className="w-full max-w-[90vw] md:max-w-[300px] h-auto opacity-70 select-none pointer-events-none"
               width={300}
               height={300}
               decoding="async"
               loading="eager"
-              style={{ display: 'block' }}
+              style={{ 
+                display: 'block',
+                objectFit: 'contain'
+              }}
             />
           </div>
 
