@@ -49,7 +49,7 @@ function Hero() {
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
               viewBox="0 0 1024 1024"
-              className="w-full max-w-[90vw] md:max-w-[200px] h-auto opacity-70 select-none pointer-events-none"
+              className="w-full max-w-[90vw] md:max-w-[240px] h-auto opacity-70 select-none pointer-events-none"
               style={{ display: 'block' }}
             >
               <path
