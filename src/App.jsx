@@ -50,8 +50,12 @@ function Hero() {
           <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[200px] md:min-h-[150px]">
             <img
               src="/Half-key.png"
-              alt="Half key"
+              alt=""
               className="w-full max-w-[90vw] md:max-w-[300px] h-auto opacity-70 select-none pointer-events-none object-contain"
+              width={300}
+              height={300}
+              decoding="async"
+              loading="eager"
               style={{ display: 'block' }}
             />
           </div>
