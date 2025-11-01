@@ -100,7 +100,7 @@ export default function Header() {
               height="32"
             />
             <div className="text-base md:text-lg font-bold tracking-wide">
-              VOLTEX <span className="text-emerald-400">LLC</span>
+              VOLTEX <span style={{ color: '#6DB433' }}>LLC</span>
             </div>
           </a>
 
