@@ -100,7 +100,7 @@ export default function Header() {
               height="32"
             />
             <div className="text-base md:text-lg font-bold tracking-wide">
-              VOLTEX <span className="text-green-500">LLC</span>
+              VOLTEX <span className="text-emerald-400">LLC</span>
             </div>
           </a>
 
