@@ -113,7 +113,11 @@ export default function Header() {
               href="https://voltex.tech" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn-outline"
+              className="inline-flex items-center gap-2 rounded-xl border px-5 py-3 font-semibold hover:bg-white/5 transition"
+              style={{
+                borderColor: '#193DE7',
+                color: '#193DE7'
+              }}
             >
               {t.headerEnergy}
             </a>
@@ -231,7 +235,11 @@ export default function Header() {
               href="https://voltex.tech"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-outline w-full justify-center"
+              className="inline-flex items-center gap-2 rounded-xl border px-5 py-3 font-semibold hover:bg-white/5 transition w-full justify-center"
+              style={{
+                borderColor: '#193DE7',
+                color: '#193DE7'
+              }}
               onClick={closeDrawer}
             >
               {t.headerEnergy}
