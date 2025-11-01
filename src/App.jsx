@@ -16,7 +16,12 @@ function Hero() {
         {/* Title at the top */}
         <div className="text-center mb-10 md:mb-14">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
-            <span className="bg-gradient-to-r from-emerald-400 via-emerald-300 to-emerald-500 bg-clip-text text-transparent animate-pulse">
+            <span 
+              className="bg-clip-text text-transparent animate-pulse"
+              style={{
+                backgroundImage: 'linear-gradient(to right, #429321, #6DB433, #A9E74C)'
+              }}
+            >
               {t.hero_title_quality}
             </span>
           </h1>
