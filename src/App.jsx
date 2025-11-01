@@ -32,24 +32,20 @@ function Hero() {
 
           {/* LEFT image — upscaled to match right figure height */}
           <div className="hidden md:flex md:col-start-1 md:col-end-2 justify-self-start self-end">
-            <div className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden">
-              <a
-                href="/Լիցենզիա շին_page-0001.png"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="absolute bottom-0 left-1/2 translate-x-[calc(-50%+25px)] translate-y-[35px] h-full w-auto cursor-pointer"
-              >
-                <img
-                  src="/img/man-blueprint.png?v=103"
-                  alt="Engineer with blueprint"
-                  width={360}
-                  height={360}
-                  decoding="async"
-                  loading="eager"
-                  draggable={false}
-                  className="h-full w-auto object-contain select-none scale-[1.45]"
-                />
-              </a>
+            <div 
+              className="w-[260px] sm:w-[300px] lg:w-[360px] aspect-square relative overflow-hidden cursor-pointer"
+              onClick={() => window.open('/Լիցենզիա շին_page-0001.png', '_blank', 'noopener,noreferrer')}
+            >
+              <img
+                src="/img/man-blueprint.png?v=103"
+                alt="Engineer with blueprint"
+                width={360}
+                height={360}
+                decoding="async"
+                loading="eager"
+                draggable={false}
+                className="absolute bottom-0 left-1/2 translate-x-[calc(-50%+25px)] translate-y-[35px] h-full w-auto object-contain select-none scale-[1.45]"
+              />
             </div>
           </div>
 
