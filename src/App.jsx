@@ -15,7 +15,7 @@ function Hero() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 md:py-20">
         {/* Title at the top */}
         <div className="text-center mb-10 md:mb-14">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight">
+          <h1 className="text-[2.7rem] sm:text-[3.6rem] lg:text-[4.5rem] font-bold leading-tight tracking-tight">
             <span 
               className="bg-clip-text text-transparent animate-pulse"
               style={{
