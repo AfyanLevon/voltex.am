@@ -48,15 +48,21 @@ function Hero() {
 
           {/* CENTER — Half-key image */}
           <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[200px] md:min-h-[150px]">
-            <img
-              src="/Half-key_svg.svg"
-              alt=""
-              className="w-full max-w-[90vw] md:max-w-[200px] h-auto opacity-70 select-none pointer-events-none object-contain"
+            <div 
+              className="w-full max-w-[90vw] md:max-w-[200px] h-auto opacity-70 select-none pointer-events-none"
               style={{ 
                 display: 'block',
-                filter: 'invert(1) brightness(1.2)'
+                filter: 'brightness(0) invert(1)',
+                WebkitFilter: 'brightness(0) invert(1)'
               }}
-            />
+            >
+              <img
+                src="/Half-key_svg.svg"
+                alt=""
+                className="w-full h-auto"
+                style={{ display: 'block' }}
+              />
+            </div>
           </div>
 
           {/* RIGHT image — mirrored to face inward; same sizing as LEFT */}
