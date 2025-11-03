@@ -5,7 +5,6 @@ import Footer from "./components/Footer.jsx";
 import Badge from "./components/Badge.jsx";
 import Section from "./components/Section.jsx";
 import ServiceIcons from "./components/ServiceIcons.jsx";
-import HalfKeyIcon from "./components/HalfKeyIcon.jsx";
 
 function Hero() {
   const { language } = useLanguage();
@@ -49,7 +48,12 @@ function Hero() {
 
           {/* CENTER — Half-key image */}
           <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[150px] md:min-h-[100px]">
-            <HalfKeyIcon />
+            <img
+              src="/Half-key.png"
+              alt=""
+              className="w-full max-w-[90vw] md:max-w-[120px] h-auto opacity-70 select-none pointer-events-none object-contain"
+              style={{ display: 'block' }}
+            />
           </div>
 
           {/* RIGHT image — mirrored to face inward; same sizing as LEFT */}
