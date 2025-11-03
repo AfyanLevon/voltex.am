@@ -34,8 +34,8 @@ export const translations = {
     bessDesc: "Our company will help you with planning and design on the way to the KEY. You can get free advice from experienced specialists to help you find the best solution.",
     smartHome: "Construction",
     smartHomeDesc: "With many years of experience and a record of quality workmanship, Voltex has earned strong client trust and holds a Category 1 construction license. We provide construction services of any complexity.",
-    securitySystems: "Security Systems",
-    securitySystemsDesc: "CCTV, alarms, access control, perimeter & fire systems. Remote monitoring and maintenance.",
+    securitySystems: "Renovation",
+    securitySystemsDesc: "We'll complete the full renovation of your building or apartment within a reasonable timeframe. Upon completion, your project is covered by our quality guarantee.",
     energySolutions: "Other Energy Solutions",
     energySolutionsDesc: "VAWT wind turbines, solar panels, and innovative energy solutions for sustainable power generation.",
     
@@ -106,8 +106,8 @@ export const translations = {
     bessDesc: "Մեր ընկերությունը կօգնի Ձեզ նախագծման և դիզայնի հարցում դեպի ԲԱՆԱԼԻ ճանապարհին։ Փորձառու մասնագետների կողմից կարող եք ստանալ անվճար խորհրդատվություն լավագույնս կողմնորոշվելու համար։",
     smartHome: "Շինարարություն",
     smartHomeDesc: "Բազմամյա փորձի և որակյալ ախատանքի շնորհիվ Վոլտեքս ընկերությունը արժանացել է բարձր վստահության և 1-ին կարգի լիցենզիայի։ Մենք առաջարկում ենք ցանկացած բարդության շինարարական ծառայություններ։",
-    securitySystems: "Անվտանգության համակարգեր",
-    securitySystemsDesc: "CCTV, ազդանշաններ, մուտքի վերահսկում, պարագծային և հրդեհային համակարգեր: Հեռակա մոնիտորինգ և պահպանում:",
+    securitySystems: "Վերանորոգում",
+    securitySystemsDesc: "Ձեր շինության կամ բնակարանի ամբողջական վերանորոգումը կիրականացնենք խելամիտ ժամկետում։ Աշխատանքների ավարտից հետո գործում է որակի երաշխիք։",
     energySolutions: "Այլ էներգետիկ լուծումներ",
     energySolutionsDesc: "VAWT քամու տուրբիններ, արևային պանելներ և նորարարական էներգետիկ լուծումներ կայուն էներգիայի արտադրության համար:",
     
