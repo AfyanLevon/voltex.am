@@ -48,23 +48,19 @@ function Hero() {
 
           {/* CENTER — Half-key image */}
           <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[150px] md:min-h-[100px]">
-            <div 
-              className="w-full max-w-[90vw] md:max-w-[120px] h-auto opacity-70 select-none pointer-events-none"
+            <img
+              src="/Half-key_svg.svg"
+              alt=""
+              className="w-full max-w-[90vw] md:max-w-[120px] h-auto opacity-70 select-none pointer-events-none object-contain"
               style={{ 
                 display: 'block',
                 filter: 'brightness(0) invert(1)',
-                WebkitFilter: 'brightness(0) invert(1)'
+                WebkitFilter: 'brightness(0) invert(1)',
+                mixBlendMode: 'screen'
               }}
-            >
-              <img
-                src="/Half-key_svg.svg"
-                alt=""
-                className="w-full h-auto"
-                style={{ display: 'block' }}
-                onError={(e) => { console.error('SVG failed to load:', e); }}
-                onLoad={() => { console.log('SVG loaded successfully'); }}
-              />
-            </div>
+              onError={(e) => { console.error('SVG failed to load:', e.target.src); }}
+              onLoad={() => { console.log('SVG loaded successfully'); }}
+            />
           </div>
 
           {/* RIGHT image — mirrored to face inward; same sizing as LEFT */}
