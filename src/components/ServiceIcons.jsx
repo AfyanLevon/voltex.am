@@ -31,7 +31,7 @@ export default function ServiceIcons({ serviceType, className = "w-32 h-32" }) {
       return (
         <img
           src="/icons/Keyshandover-icon.png"
-          alt="Other Energy Solutions"
+          alt="THE KEYS"
           className={`${className} object-contain`}
         />
       );
