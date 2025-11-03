@@ -51,8 +51,11 @@ function Hero() {
             <img
               src="/Half-key_svg.svg"
               alt=""
-              className="w-full max-w-[90vw] md:max-w-[300px] h-auto opacity-70 select-none pointer-events-none object-contain"
-              style={{ display: 'block' }}
+              className="w-full max-w-[90vw] md:max-w-[200px] h-auto opacity-70 select-none pointer-events-none object-contain"
+              style={{ 
+                display: 'block',
+                filter: 'invert(1) brightness(1.2)'
+              }}
             />
           </div>
 
