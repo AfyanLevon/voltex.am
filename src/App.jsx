@@ -47,11 +47,11 @@ function Hero() {
           </div>
 
           {/* CENTER — Half-key image */}
-          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+          <div className="col-start-1 col-end-2 md:col-start-2 md:col-end-3 relative flex items-center justify-center min-h-[150px] md:min-h-[230px]">
             <img
               src="/Half-key.png"
               alt=""
-              className="w-full max-w-[90vw] md:max-w-[240px] lg:max-w-[280px] h-auto opacity-70 select-none pointer-events-none object-contain"
+              className="w-full max-w-[90vw] md:max-w-[276px] lg:max-w-[322px] h-auto opacity-70 select-none pointer-events-none object-contain"
               style={{ display: 'block' }}
             />
           </div>
