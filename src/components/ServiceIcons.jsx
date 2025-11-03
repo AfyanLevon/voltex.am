@@ -22,7 +22,7 @@ export default function ServiceIcons({ serviceType, className = "w-32 h-32" }) {
       return (
         <img
           src="/icons/Restoration-icon.png"
-          alt="Security Systems"
+          alt="Renovation"
           className={`${className} object-contain`}
         />
       );
