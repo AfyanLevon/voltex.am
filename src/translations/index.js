@@ -36,8 +36,8 @@ export const translations = {
     smartHomeDesc: "With many years of experience and a record of quality workmanship, Voltex has earned strong client trust and holds a Category 1 construction license. We provide construction services of any complexity.",
     securitySystems: "Renovation",
     securitySystemsDesc: "We'll complete the full renovation of your building or apartment within a reasonable timeframe. Upon completion, your project is covered by our quality guarantee.",
-    energySolutions: "Other Energy Solutions",
-    energySolutionsDesc: "VAWT wind turbines, solar panels, and innovative energy solutions for sustainable power generation.",
+    energySolutions: "THE KEYS",
+    energySolutionsDesc: "Reach your desired result with the Voltex Team—saving you time and stress.",
     
     // Why Voltex Section
     whyVoltexTitle: "Why Choose Voltex?",
@@ -108,8 +108,8 @@ export const translations = {
     smartHomeDesc: "Բազմամյա փորձի և որակյալ ախատանքի շնորհիվ Վոլտեքս ընկերությունը արժանացել է բարձր վստահության և 1-ին կարգի լիցենզիայի։ Մենք առաջարկում ենք ցանկացած բարդության շինարարական ծառայություններ։",
     securitySystems: "Վերանորոգում",
     securitySystemsDesc: "Ձեր շինության կամ բնակարանի ամբողջական վերանորոգումը կիրականացնենք խելամիտ ժամկետում։ Աշխատանքների ավարտից հետո գործում է որակի երաշխիք։",
-    energySolutions: "Այլ էներգետիկ լուծումներ",
-    energySolutionsDesc: "VAWT քամու տուրբիններ, արևային պանելներ և նորարարական էներգետիկ լուծումներ կայուն էներգիայի արտադրության համար:",
+    energySolutions: "ԲԱՆԱԼԻ",
+    energySolutionsDesc: "Բաղձալի արդյունք, որին Վոլտեքս թիմի հետ կարող եք հասնել՝ խնայելով ժամանակն ու նյարդերը։",
     
     // Why Voltex Section
     whyVoltexTitle: "Ինչու ընտրել Voltex-ը?",
