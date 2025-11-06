@@ -83,7 +83,7 @@ function Services() {
     { title: t.energySolutions, desc: t.energySolutionsDesc, icon: 'energySolutions' },
   ];
   return (
-    <Section id="services" title={t.servicesTitle} kicker={t.servicesSubtitle}>
+    <Section id="services" title={t.servicesTitle} kicker={t.servicesSubtitle} titleColor="#6DB433">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {items.map((x, i) => (
           <div key={i} className="card">
@@ -105,7 +105,7 @@ function Services() {
 function Why() {
   const { language } = useLanguage(); const t = translations[language];
   return (
-    <Section id="why" title={t.whyVoltexTitle} kicker={t.whyVoltexSubtitle}>
+    <Section id="why" title={t.whyVoltexTitle} kicker={t.whyVoltexSubtitle} titleColor="#6DB433">
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <div className="card"><h3 className="font-semibold">{t.expertise}</h3><p className="mt-2 text-white/70">{t.expertiseDesc}</p></div>
         <div className="card"><h3 className="font-semibold">{t.quality}</h3><p className="mt-2 text-white/70">{t.qualityDesc}</p></div>
@@ -118,7 +118,7 @@ function Why() {
 function Contact() {
   const { language } = useLanguage(); const t = translations[language];
   return (
-    <Section id="contact" title={t.contactTitle} kicker={t.contactSubtitle}>
+    <Section id="contact" title={t.contactTitle} kicker={t.contactSubtitle} titleColor="#6DB433">
       <div className="card">
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
