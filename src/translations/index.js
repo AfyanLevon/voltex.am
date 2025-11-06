@@ -50,8 +50,8 @@ export const translations = {
     supportDesc: "Comprehensive support and maintenance services that keep your systems running at peak performance. Our commitment to your success extends far beyond project completion.",
     
     // Contact Section
-    contactTitle: "Ready to Transform Your Business?",
-    contactSubtitle: "Let's discuss how our proven solutions can meet your needs",
+    contactTitle: "Contact us for the best solution to your project.",
+    contactSubtitle: "Licensed team and quality guarantee.",
     contactDescription: "Join our portfolio of satisfied clients who trust Voltex for their technology solutions. Contact us today to explore how our expertise can drive your business growth.",
     contactEmail: "info@voltex.am",
     contactPhone: "+374 95 933 939",
@@ -112,7 +112,7 @@ export const translations = {
     energySolutionsDesc: "Բաղձալի արդյունք, որին Վոլտեքս թիմի հետ կարող եք հասնել՝ խնայելով ժամանակն ու նյարդերը։",
     
     // Why Voltex Section
-    whyVoltexTitle: "Ինչու ընտրել Voltex-ը?",
+    whyVoltexTitle: "Ինչու՞ ընտրել Վոլտեքսը",
     whyVoltexSubtitle: "Գերազանցություն ամեն լուծման մեջ, վստահություն ամեն գործընկերության մեջ",
     expertise: "Ապացուցված Փորձագիտություն",
     expertiseDesc: "Տարիների արդյունաբերության փորձ և հաջող նախագծերի պորտֆոլիո՝ տարբեր ոլորտներում: Մեր թիմը բերում է խորը տեխնիկական գիտելիքներ և նորարարական մտածողություն ամեն ներգրավվածության մեջ:",
@@ -122,8 +122,8 @@ export const translations = {
     supportDesc: "Համապարփակ աջակցություն և պահպանման ծառայություններ, որոնք պահպանում են ձեր համակարգերը գագաթնակետային կատարողականության մեջ: Մեր նվիրվածությունը ձեր հաջողությանը տարածվում է շատ ավելի հեռու, քան նախագծի ավարտը:",
     
     // Contact Section
-    contactTitle: "Պատրաստ եք փոխակերպել ձեր բիզնեսը?",
-    contactSubtitle: "Եկեք քննարկենք, թե ինչպես մեր ապացուցված լուծումները կարող են բավարարել ձեր կարիքները",
+    contactTitle: "Կապվե՛ք մեզ հետ՝ ձեր նախագծի լավագույն լուծման համար",
+    contactSubtitle: "Լիցենզավորված թիմ և որակի երաշխիք",
     contactDescription: "Միացեք մեր բավարարված հաճախորդների պորտֆոլիոյին, ովքեր վստահում են Voltex-ին իրենց տեխնոլոգիական լուծումների համար: Կապվեք մեզ հետ այսօր՝ բացահայտելու համար, թե ինչպես մեր փորձագիտությունը կարող է խթանել ձեր բիզնեսի աճը:",
     contactEmail: "info@voltex.am",
     contactPhone: "+374 95 933 939",
