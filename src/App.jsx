@@ -138,7 +138,7 @@ function Why() {
                 tabIndex={0}
                 role="button"
                 aria-label={t.licenseOpenLabel}
-                className="w-full rounded-lg border border-white/10 bg-gray-800/40 hover:bg-gray-800/60 transition-all duration-200 hover:border-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 overflow-hidden group"
+                className="w-full rounded-lg border border-white/10 bg-gray-800/40 hover:bg-gray-800/60 hover:border-white/20 hover:ring-2 hover:ring-white/10 hover:scale-[1.02] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white/20 overflow-hidden cursor-pointer"
               >
                 <div className="relative w-full aspect-[4/3] overflow-hidden">
                   <img
@@ -148,9 +148,8 @@ function Why() {
                     loading="lazy"
                   />
                 </div>
-                <p className="px-3 py-2 text-xs text-white/70 text-center border-t border-white/5 group-hover:text-white/90 transition-colors">
-                  {t.licenseCaption}
-                </p>
+                {/* Screen reader only text */}
+                <span className="sr-only">{t.licenseCaption}</span>
               </button>
             </div>
           </div>
