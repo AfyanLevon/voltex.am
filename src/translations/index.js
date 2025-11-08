@@ -49,6 +49,14 @@ export const translations = {
     support: "Dedicated Support",
     supportDesc: "We provide a quality guarantee. Keys are handed over only after a complete final clean of the site. If desired, we can arrange an ongoing maintenance package tailored to your needs.",
     
+    // License
+    licenseCaption: "Construction License (Class I) • Valid until 24.10.2029",
+    licenseAlt: "Voltex construction license, Class I",
+    licenseOpenLabel: "Open full license image",
+    licenseOpenOriginal: "Open original",
+    licenseDownload: "Download",
+    licenseClose: "Close",
+    
     // Contact Section
     contactTitle: "Contact us for the best solution to your project.",
     contactSubtitle: "Licensed team and quality guarantee.",
@@ -120,6 +128,14 @@ export const translations = {
     qualityDesc: "Աշխատանքները իրականացնում ենք շինարարական նորմատիվների և ստանդարտների խիստ պահպանմամբ՝ կիրառելով տարիների ընթացքում փորձարկված նյութեր ու հաստատված տեխնոլոգիաներ։ Այս ամենը ապահովում է անվտանգություն, ամրություն և երկարակյացություն։ Յուրաքանչյուր փուլ անցնում է տեխնիկական հսկողություն, իսկ որոշակի դեպքերում նաև փորձաքննություն։",
     support: "Նվիրված Աջակցություն",
     supportDesc: "Տրվում է որակի երաշխիք։ Բանալին հանձնվում է միայն օբյեկտի ամբողջական մաքրումից հետո։ Ցանկության դեպքում, ունենք ընթացիկ սպասարկման ծառայությունների փաթեթ, որը կկազմենք միասին՝ Ձեր պահանջներից ելնելով։",
+    
+    // License
+    licenseCaption: "Լիցենզիա՝ շինարարություն (1-ին կարգ) • Գործող մինչև 24.10.2029",
+    licenseAlt: "Վոլտեքս շինարարության լիցենզիա, 1-ին կարգ",
+    licenseOpenLabel: "Բացել լիցենզիայի ամբողջական պատկերը",
+    licenseOpenOriginal: "Բացել բնօրինակը",
+    licenseDownload: "Ներբեռնել",
+    licenseClose: "Փակել",
     
     // Contact Section
     contactTitle: "Կապվե՛ք մեզ հետ՝ ձեր նախագծի լավագույն լուծման համար",
