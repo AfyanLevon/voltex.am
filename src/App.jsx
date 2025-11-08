@@ -1,10 +1,12 @@
 import { LanguageProvider, useLanguage } from "./contexts/LanguageContext";
 import { translations } from "./translations";
+import { useState } from "react";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Badge from "./components/Badge.jsx";
 import Section from "./components/Section.jsx";
 import ServiceIcons from "./components/ServiceIcons.jsx";
+import LicenseModal from "./components/LicenseModal.jsx";
 
 function Hero() {
   const { language } = useLanguage();
@@ -104,14 +106,66 @@ function Services() {
 
 function Why() {
   const { language } = useLanguage(); const t = translations[language];
+  const [isLicenseModalOpen, setIsLicenseModalOpen] = useState(false);
+  
+  const licenseImageSrc = "/license/voltex-license.png";
+  const licenseThumbnailSrc = "/license/voltex-license-thumb.jpg";
+
+  const handleLicenseClick = () => {
+    setIsLicenseModalOpen(true);
+  };
+
+  const handleLicenseKeyDown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      handleLicenseClick();
+    }
+  };
+
   return (
-    <Section id="why" title={t.whyVoltexTitle} kicker={t.whyVoltexSubtitle} titleColor="#6DB433">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="card"><h3 className="font-semibold">{t.expertise}</h3><p className="mt-2 text-white/70">{t.expertiseDesc}</p></div>
-        <div className="card"><h3 className="font-semibold">{t.quality}</h3><p className="mt-2 text-white/70">{t.qualityDesc}</p></div>
-        <div className="card"><h3 className="font-semibold">{t.support}</h3><p className="mt-2 text-white/70">{t.supportDesc}</p></div>
-      </div>
-    </Section>
+    <>
+      <Section id="why" title={t.whyVoltexTitle} kicker={t.whyVoltexSubtitle} titleColor="#6DB433">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="card">
+            <h3 className="font-semibold">{t.expertise}</h3>
+            <p className="mt-2 text-white/70">{t.expertiseDesc}</p>
+            
+            {/* License Preview */}
+            <div className="mt-4">
+              <button
+                onClick={handleLicenseClick}
+                onKeyDown={handleLicenseKeyDown}
+                tabIndex={0}
+                role="button"
+                aria-label={t.licenseOpenLabel}
+                className="w-full rounded-lg border border-white/10 bg-gray-800/40 hover:bg-gray-800/60 transition-all duration-200 hover:border-white/20 focus:outline-none focus:ring-2 focus:ring-white/20 overflow-hidden group"
+              >
+                <div className="relative w-full aspect-[4/3] overflow-hidden">
+                  <img
+                    src={licenseThumbnailSrc || licenseImageSrc}
+                    alt={t.licenseAlt}
+                    className="w-full h-full object-contain p-2"
+                    loading="lazy"
+                  />
+                </div>
+                <p className="px-3 py-2 text-xs text-white/70 text-center border-t border-white/5 group-hover:text-white/90 transition-colors">
+                  {t.licenseCaption}
+                </p>
+              </button>
+            </div>
+          </div>
+          <div className="card"><h3 className="font-semibold">{t.quality}</h3><p className="mt-2 text-white/70">{t.qualityDesc}</p></div>
+          <div className="card"><h3 className="font-semibold">{t.support}</h3><p className="mt-2 text-white/70">{t.supportDesc}</p></div>
+        </div>
+      </Section>
+      
+      <LicenseModal
+        isOpen={isLicenseModalOpen}
+        onClose={() => setIsLicenseModalOpen(false)}
+        imageSrc={licenseImageSrc}
+        thumbnailSrc={licenseThumbnailSrc}
+      />
+    </>
   );
 }
 
