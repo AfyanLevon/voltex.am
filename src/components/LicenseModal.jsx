@@ -110,9 +110,8 @@ export default function LicenseModal({ isOpen, onClose, imageSrc, thumbnailSrc }
         className="relative z-10 w-full max-w-[95vw] max-h-[95vh] bg-gray-900 rounded-xl border border-white/10 shadow-2xl flex flex-col overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Header */}
-        <div className="flex items-center justify-between p-3 sm:p-4 border-b border-white/10 flex-shrink-0">
-          <h2 className="text-sm sm:text-lg font-semibold text-white pr-2">{t.licenseCaption}</h2>
+        {/* Header - Close button only */}
+        <div className="flex items-center justify-end p-3 sm:p-4 border-b border-white/10 flex-shrink-0">
           <button
             ref={firstFocusableRef}
             onClick={onClose}
