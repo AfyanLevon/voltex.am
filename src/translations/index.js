@@ -43,11 +43,11 @@ export const translations = {
     whyVoltexTitle: "Why Choose Voltex?",
     whyVoltexSubtitle: "Excellence in every solution, trust in every partnership",
     expertise: "Proven Expertise",
-    expertiseDesc: "Years of industry experience and a portfolio of successful projects across diverse sectors. Our team brings deep technical knowledge and innovative thinking to every engagement.",
+    expertiseDesc: "Dozens of completed construction and renovation projects in Yerevan and across the regions. Work with a licensed company.",
     quality: "Uncompromising Quality",
-    qualityDesc: "Every solution undergoes rigorous testing and quality assurance protocols. We maintain the highest standards in the industry, ensuring your investment delivers lasting value and performance.",
+    qualityDesc: "All work is performed in strict compliance with construction codes and standards, using time-tested materials and approved technologies. This ensures safety, structural strength, and long-term durability. Each phase is subject to technical supervision and, where applicable, expert examination.",
     support: "Dedicated Support",
-    supportDesc: "Comprehensive support and maintenance services that keep your systems running at peak performance. Our commitment to your success extends far beyond project completion.",
+    supportDesc: "We provide a quality guarantee. Keys are handed over only after a complete final clean of the site. If desired, we can arrange an ongoing maintenance package tailored to your needs.",
     
     // Contact Section
     contactTitle: "Contact us for the best solution to your project.",
@@ -115,11 +115,11 @@ export const translations = {
     whyVoltexTitle: "Ինչու՞ ընտրել Վոլտեքսը",
     whyVoltexSubtitle: "Գերազանցություն ամեն լուծման մեջ, վստահություն ամեն գործընկերության մեջ",
     expertise: "Ապացուցված Փորձագիտություն",
-    expertiseDesc: "Տարիների արդյունաբերության փորձ և հաջող նախագծերի պորտֆոլիո՝ տարբեր ոլորտներում: Մեր թիմը բերում է խորը տեխնիկական գիտելիքներ և նորարարական մտածողություն ամեն ներգրավվածության մեջ:",
+    expertiseDesc: "Մի քանի տասնյակ ավարտված շինարարության և վերանորոգուման պրոյեկտներ Երևանում ու մարզերում։ Ստացե՛ք լիցենզավորված ընկերության ծառայություններ",
     quality: "Անզիջող Որակ",
-    qualityDesc: "Ամեն լուծում անցնում է խիստ փորձարկումներ և որակի ապահովման պրոտոկոլներ: Մենք պահպանում ենք արդյունաբերության ամենաբարձր չափանիշները՝ ապահովելով, որ ձեր ներդրումը տրամադրի տևական արժեք և կատարողականություն:",
+    qualityDesc: "Աշխատանքները իրականացնում ենք շինարարական նորմատիվների և ստանդարտների խիստ պահպանմամբ՝ կիրառելով տարիների ընթացքում փորձարկված նյութեր ու հաստատված տեխնոլոգիաներ։ Այս ամենը ապահովում է անվտանգություն, ամրություն և երկարակյացություն։ Յուրաքանչյուր փուլ անցնում է տեխնիկական հսկողություն, իսկ որոշակի դեպքերում նաև փորձաքննություն։",
     support: "Նվիրված Աջակցություն",
-    supportDesc: "Համապարփակ աջակցություն և պահպանման ծառայություններ, որոնք պահպանում են ձեր համակարգերը գագաթնակետային կատարողականության մեջ: Մեր նվիրվածությունը ձեր հաջողությանը տարածվում է շատ ավելի հեռու, քան նախագծի ավարտը:",
+    supportDesc: "Տրվում է որակի երաշխիք։ Բանալին հանձնվում է միայն օբյեկտի ամբողջական մաքրումից հետո։ Ցանկության դեպքում, ունենք ընթացիկ սպասարկման ծառայությունների փաթեթ, որը կկազմենք միասին՝ Ձեր պահանջներից ելնելով։",
     
     // Contact Section
     contactTitle: "Կապվե՛ք մեզ հետ՝ ձեր նախագծի լավագույն լուծման համար",
