@@ -7,6 +7,7 @@ import Badge from "./components/Badge.jsx";
 import Section from "./components/Section.jsx";
 import ServiceIcons from "./components/ServiceIcons.jsx";
 import LicenseModal from "./components/LicenseModal.jsx";
+import ContactMap from "./components/ContactMap.jsx";
 
 function Hero() {
   const { language } = useLanguage();
@@ -170,21 +171,44 @@ function Why() {
 
 function Contact() {
   const { language } = useLanguage(); const t = translations[language];
+  
+  const emailHref = "mailto:info@voltex.am?subject=Project%20inquiry%20from%20website&body=Hello%20Voltex%2C%20please%20contact%20me%20about%20a%20project.";
+  const phoneHref = "tel:+37495933939";
+  const whatsappHref = "https://wa.me/37495933939?text=%D5%82%D5%A1%D6%80%D6%87%2C%20%D6%81%D5%A1%D5%B6%D5%AF%D5%A1%D6%81%D5%B8%D6%82%D5%B4%20%D5%A5%D5%B4%20%D5%AD%D5%B8%D6%80%D5%90%D6%80%D5%A4%D5%A1%D5%BF%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%A6%20%D5%B6%D5%A1%D5%AD%D5%A1%D5%A3%D5%AE%D5%AB%20%D5%B4%D5%A1%D5%BD%D5%AB%D5%B6%E2%80%A4";
+  
   return (
-    <Section id="contact" title={t.contactTitle} kicker={t.contactSubtitle} titleColor="#6DB433">
+    <Section id="contact" title={t.contactTitle} kicker={t.contactSubtitle || undefined} titleColor="#6DB433">
       <div className="card">
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
             <p className="text-white/80">{t.contactDescription}</p>
-            <div className="mt-6 flex gap-3">
-              <a href="mailto:info@voltex.am" className="btn-primary">Email us</a>
-              <a href="tel:+37495933939" className="btn-outline">Call now</a>
+            <div className="mt-6 flex flex-col sm:flex-row gap-3">
+              <a
+                href={emailHref}
+                className="btn-primary flex-1 text-center"
+                aria-label={t.contactEmailLabel}
+              >
+                {t.contactEmailLabel}
+              </a>
+              <a
+                href={phoneHref}
+                className="btn-outline flex-1 text-center"
+                aria-label={t.contactCallLabel}
+              >
+                {t.contactCallLabel}
+              </a>
+              <a
+                href={whatsappHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline flex-1 text-center"
+                aria-label={t.contactWhatsAppLabel}
+              >
+                {t.contactWhatsAppLabel}
+              </a>
             </div>
           </div>
-          <div className="rounded-xl border border-white/10 bg-gray-800/60 p-4">
-            <iframe title="Voltex location" className="h-72 w-full rounded-lg border border-white/10" loading="lazy" referrerPolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=44.0,40.1,45.2,41.0&layer=mapnik"></iframe>
-            <p className="mt-2 text-xs text-white/50">Approximate location for demo.</p>
-          </div>
+          <ContactMap />
         </div>
       </div>
     </Section>
