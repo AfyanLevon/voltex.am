@@ -58,11 +58,17 @@ export const translations = {
     licenseClose: "Close",
     
     // Contact Section
-    contactTitle: "Contact us for the best solution to your project.",
-    contactSubtitle: "Licensed team and quality guarantee.",
-    contactDescription: "Join our portfolio of satisfied clients who trust Voltex for their technology solutions. Contact us today to explore how our expertise can drive your business growth.",
+    contactTitle: "Contact us for the best solution to your project",
+    contactSubtitle: "",
+    contactDescription: "Get a clear quote and a realistic timeline.",
     contactEmail: "info@voltex.am",
     contactPhone: "+374 95 933 939",
+    contactEmailLabel: "Email us",
+    contactCallLabel: "Call now",
+    contactWhatsAppLabel: "WhatsApp",
+    contactMapPopup: "Voltex LLC · 44/3 Acharyan St, Yerevan 0044 · +374 95 933939",
+    contactOpenGoogleMaps: "Open in Google Maps",
+    contactOpenYandexMaps: "Open in Yandex Maps",
     
     // Footer
     footerDescription: "Voltex LLC - Delivering reliable technology solutions with proven performance and unwavering commitment to excellence.",
@@ -139,10 +145,16 @@ export const translations = {
     
     // Contact Section
     contactTitle: "Կապվե՛ք մեզ հետ՝ ձեր նախագծի լավագույն լուծման համար",
-    contactSubtitle: "Լիցենզավորված թիմ և որակի երաշխիք",
-    contactDescription: "Միացեք մեր բավարարված հաճախորդների պորտֆոլիոյին, ովքեր վստահում են Voltex-ին իրենց տեխնոլոգիական լուծումների համար: Կապվեք մեզ հետ այսօր՝ բացահայտելու համար, թե ինչպես մեր փորձագիտությունը կարող է խթանել ձեր բիզնեսի աճը:",
+    contactSubtitle: "",
+    contactDescription: "Ստացեք հստակ գին և իրական ժամանակացույց։",
     contactEmail: "info@voltex.am",
     contactPhone: "+374 95 933 939",
+    contactEmailLabel: "Էլ. փոստ",
+    contactCallLabel: "Զանգահարել",
+    contactWhatsAppLabel: "WhatsApp",
+    contactMapPopup: "Voltex LLC · Երևան, Աչարյան 44/3 · +374 95 933939",
+    contactOpenGoogleMaps: "Բացել Google Maps-ում",
+    contactOpenYandexMaps: "Բացել Yandex Maps-ում",
     
     // Footer
     footerDescription: "Voltex LLC - Տրամադրում է հուսալի տեխնոլոգիական լուծումներ՝ ապացուցված կատարողականությամբ և անսասան նվիրվածությամբ գերազանցությանը:",
