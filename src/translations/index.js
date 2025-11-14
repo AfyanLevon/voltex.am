@@ -169,7 +169,7 @@ export const translations = {
     contactOpenYandexMaps: "Բացել Yandex Maps-ում",
     
     // Footer
-    footerSocialTitle: "Voltex LLC-ի սոցիալական էջերը",
+    footerSocialTitle: "Վոլտեքսի սոցիալական էջերը",
     footerFacebook: "Facebook",
     footerInstagram: "Instagram",
     footerLinkedIn: "LinkedIn",
