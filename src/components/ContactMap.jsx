@@ -97,8 +97,8 @@ export default function ContactMap() {
     <div className="rounded-xl border border-white/10 bg-gray-800/60 p-4 relative">
       <div className="relative">
         <div ref={mapRef} className="h-72 w-full rounded-lg border border-white/10" />
-        {/* Armenian flag badge in top-right corner */}
-        <div className="absolute top-2 right-2 z-[1000] bg-white/90 backdrop-blur-sm rounded px-2 py-1 text-lg shadow-lg">
+        {/* Armenian flag badge in top-right corner - visible on all breakpoints */}
+        <div className="absolute top-2 right-2 z-[1000] bg-white/90 backdrop-blur-sm rounded px-2 py-1 text-lg shadow-lg pointer-events-none">
           🇦🇲
         </div>
       </div>

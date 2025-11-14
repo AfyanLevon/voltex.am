@@ -18,7 +18,10 @@ export default function Footer() {
                   href="https://www.facebook.com/Voltexllc"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-voltex"
+                  className="hover:underline transition-all"
+                  style={{ color: '#1877F2' }}
+                  onMouseEnter={(e) => e.target.style.color = '#1a8cff'}
+                  onMouseLeave={(e) => e.target.style.color = '#1877F2'}
                 >
                   {t.footerFacebook}
                 </a>
@@ -28,7 +31,12 @@ export default function Footer() {
                   href="https://www.instagram.com/voltex.am"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-voltex"
+                  className="hover:underline transition-all bg-clip-text text-transparent"
+                  style={{
+                    backgroundImage: 'linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d)'
+                  }}
+                  onMouseEnter={(e) => e.target.style.opacity = '0.9'}
+                  onMouseLeave={(e) => e.target.style.opacity = '1'}
                 >
                   {t.footerInstagram}
                 </a>
@@ -38,7 +46,10 @@ export default function Footer() {
                   href="https://www.linkedin.com/company/voltex-llc"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-voltex"
+                  className="hover:underline transition-all"
+                  style={{ color: '#0077B5' }}
+                  onMouseEnter={(e) => e.target.style.color = '#0088cc'}
+                  onMouseLeave={(e) => e.target.style.color = '#0077B5'}
                 >
                   {t.footerLinkedIn}
                 </a>
@@ -48,7 +59,10 @@ export default function Footer() {
                   href="https://www.youtube.com/@VoltexLLC"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-voltex"
+                  className="hover:underline transition-all"
+                  style={{ color: '#FF0000' }}
+                  onMouseEnter={(e) => e.target.style.color = '#ff1a1a'}
+                  onMouseLeave={(e) => e.target.style.color = '#FF0000'}
                 >
                   {t.footerYouTube}
                 </a>
@@ -72,19 +86,18 @@ export default function Footer() {
               <li>{t.footerAddress}</li>
             </ul>
           </div>
-          {/* Company Column */}
+          {/* Image Column */}
           <div>
-            <div className="font-semibold text-white">{t.footerCompanyTitle}</div>
-            <ul className="mt-2 space-y-1">
-              <li><a href="#services" className="hover:text-voltex">Services</a></li>
-              <li><a href="#why" className="hover:text-voltex">Why Voltex</a></li>
-              <li><a href="#contact" className="hover:text-voltex">Contact</a></li>
-            </ul>
+            <img
+              src="/icons/todo.png"
+              alt="TODO section placeholder"
+              className="w-full h-auto object-contain"
+            />
           </div>
         </div>
         <div className="mt-8 border-t border-white/5 pt-6 flex items-center justify-between">
           <span>© {new Date().getFullYear()} Voltex LLC. All rights reserved.</span>
-          <a href="https://voltex.am" className="hover:text-voltex">voltex.am →</a>
+          <a href="https://voltex.tech" className="hover:text-voltex">voltex.tech →</a>
         </div>
       </div>
     </footer>

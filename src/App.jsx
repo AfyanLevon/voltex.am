@@ -208,7 +208,10 @@ function Contact() {
                 href={whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-outline flex-1 text-center"
+                className="flex-1 text-center px-4 py-2 rounded-lg font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white/20"
+                style={{ backgroundColor: '#075E54' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#064e47'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#075E54'}
                 aria-label={t.contactWhatsAppLabel}
               >
                 {t.contactWhatsAppLabel}
@@ -217,7 +220,10 @@ function Contact() {
                 href={telegramHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-outline flex-1 text-center"
+                className="flex-1 text-center px-4 py-2 rounded-lg font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white/20"
+                style={{ backgroundColor: '#0088CC' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#0077b5'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#0088CC'}
                 aria-label={t.contactTelegramLabel}
               >
                 {t.contactTelegramLabel}
@@ -226,7 +232,10 @@ function Contact() {
                 href={viberHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-outline flex-1 text-center"
+                className="flex-1 text-center px-4 py-2 rounded-lg font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white/20"
+                style={{ backgroundColor: '#7360f2' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = '#6250d9'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = '#7360f2'}
                 aria-label={t.contactViberLabel}
               >
                 {t.contactViberLabel}
