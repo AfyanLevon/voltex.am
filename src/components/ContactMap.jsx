@@ -107,7 +107,12 @@ export default function ContactMap() {
           href="https://www.google.com/maps?q=40.226629,44.558403&z=19"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white/70 hover:text-white transition-colors underline"
+          className="bg-clip-text text-transparent hover:underline transition-all"
+          style={{
+            backgroundImage: 'linear-gradient(to right, #4285F4, #34A853, #EA4335, #FBBC04)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent'
+          }}
           aria-label={t.contactOpenGoogleMaps}
         >
           {t.contactOpenGoogleMaps}
@@ -117,7 +122,12 @@ export default function ContactMap() {
           href="https://yandex.com/maps/?ll=44.558403%2C40.226629&z=19&pt=44.558403,40.226629,pm2rdl"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-white/70 hover:text-white transition-colors underline"
+          className="bg-clip-text text-transparent hover:underline transition-all"
+          style={{
+            backgroundImage: 'linear-gradient(to right, #FF3333, #FFCC00, #FFDA3E)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent'
+          }}
           aria-label={t.contactOpenYandexMaps}
         >
           {t.contactOpenYandexMaps}
