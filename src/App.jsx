@@ -172,9 +172,11 @@ function Why() {
 function Contact() {
   const { language } = useLanguage(); const t = translations[language];
   
-  const emailHref = "mailto:info@voltex.am?subject=Project%20inquiry%20from%20website&body=Hello%20Voltex%2C%20please%20contact%20me%20about%20a%20project.";
-  const phoneHref = "tel:+37495933939";
-  const whatsappHref = "https://wa.me/37495933939?text=%D5%82%D5%A1%D6%80%D6%87%2C%20%D6%81%D5%A1%D5%B6%D5%AF%D5%A1%D6%81%D5%B8%D6%82%D5%B4%20%D5%A5%D5%B4%20%D5%AD%D5%B8%D6%80%D5%90%D6%80%D5%A4%D5%A1%D5%BF%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%A6%20%D5%B6%D5%A1%D5%AD%D5%A1%D5%A3%D5%AE%D5%AB%20%D5%B4%D5%A1%D5%BD%D5%AB%D5%B6%E2%80%A4";
+  const emailHref = `mailto:${t.contactEmail}?subject=Project%20inquiry%20from%20website&body=Hello%20Voltex%2C%20please%20contact%20me%20about%20a%20project.`;
+  const phoneHref = `tel:${t.contactPhone.replace(/\s/g, '')}`;
+  const whatsappHref = `https://wa.me/37443443040?text=%D5%82%D5%A1%D6%80%D6%87%2C%20%D6%81%D5%A1%D5%B6%D5%AF%D5%A1%D6%81%D5%B8%D6%82%D5%B4%20%D5%A5%D5%B4%20%D5%AD%D5%B8%D6%80%D5%90%D6%80%D5%A4%D5%A1%D5%BF%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%A6%20%D5%B6%D5%A1%D5%AD%D5%A1%D5%A3%D5%AE%D5%AB%20%D5%B4%D5%A1%D5%BD%D5%AB%D5%B6%E2%80%A4`;
+  const telegramHref = "tg://resolve?phone=37443443040";
+  const viberHref = "viber://chat?number=%2B37443443040";
   
   return (
     <Section id="contact" title={t.contactTitle} kicker={t.contactSubtitle || undefined} titleColor="#6DB433">
@@ -182,10 +184,12 @@ function Contact() {
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
             <p className="text-white/80">{t.contactDescription}</p>
+            {/* First row: Email and Call */}
             <div className="mt-6 flex flex-col sm:flex-row gap-3">
               <a
                 href={emailHref}
                 className="btn-primary flex-1 text-center"
+                style={{ backgroundColor: '#6DB433' }}
                 aria-label={t.contactEmailLabel}
               >
                 {t.contactEmailLabel}
@@ -197,6 +201,9 @@ function Contact() {
               >
                 {t.contactCallLabel}
               </a>
+            </div>
+            {/* Second row: WhatsApp, Telegram, Viber */}
+            <div className="mt-3 flex flex-col sm:flex-row gap-3">
               <a
                 href={whatsappHref}
                 target="_blank"
@@ -205,6 +212,24 @@ function Contact() {
                 aria-label={t.contactWhatsAppLabel}
               >
                 {t.contactWhatsAppLabel}
+              </a>
+              <a
+                href={telegramHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline flex-1 text-center"
+                aria-label={t.contactTelegramLabel}
+              >
+                {t.contactTelegramLabel}
+              </a>
+              <a
+                href={viberHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline flex-1 text-center"
+                aria-label={t.contactViberLabel}
+              >
+                {t.contactViberLabel}
               </a>
             </div>
           </div>
