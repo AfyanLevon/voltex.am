@@ -11,8 +11,8 @@ export default function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {/* Social Links Column */}
           <div>
-            <div className="font-semibold text-white">{t.footerSocialTitle}</div>
-            <ul className="mt-2 space-y-1">
+            <div className="text-lg font-semibold text-white mb-3">{t.footerSocialTitle}</div>
+            <ul className="space-y-1.5 text-base">
               <li>
                 <a
                   href="https://www.facebook.com/Voltexllc"
@@ -71,8 +71,8 @@ export default function Footer() {
           </div>
           {/* Contact Column */}
           <div>
-            <div className="font-semibold text-white">{t.footerContactTitle}</div>
-            <ul className="mt-2 space-y-1">
+            <div className="text-lg font-semibold text-white mb-3">{t.footerContactTitle}</div>
+            <ul className="space-y-1.5 text-base">
               <li>
                 <a href={`mailto:${t.contactEmail}`} className="hover:text-voltex">
                   {t.contactEmail}
@@ -87,11 +87,11 @@ export default function Footer() {
             </ul>
           </div>
           {/* Image Column */}
-          <div>
+          <div className="flex items-end justify-end">
             <img
-              src="/icons/todo.png"
-              alt="TODO section placeholder"
-              className="w-full h-auto object-contain"
+              src="/icons/sitting_man.png"
+              alt="Voltex illustration"
+              className="w-full h-auto object-contain max-w-full"
             />
           </div>
         </div>
