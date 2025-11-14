@@ -176,7 +176,7 @@ export const translations = {
     footerYouTube: "YouTube",
     footerContactTitle: "Կապ",
     footerCompanyTitle: "Ընկերություն",
-    footerAddress: "44/3 Աճառյան փ., Երևան, Հայաստան 2210",
+    footerAddress: "Երևան, Աճառյան 44/3",
     footerDescription: "Voltex LLC - Տրամադրում է հուսալի տեխնոլոգիական լուծումներ՝ ապացուցված կատարողականությամբ և անսասան նվիրվածությամբ գերազանցությանը:",
     allRightsReserved: "Բոլոր իրավունքները պաշտպանված են: Voltex LLC:",
     
